@@ -1,0 +1,194 @@
+
+/* Theme: Aurora Cósmica — alt contrast, aire d'univers, professional */
+:root{
+  --bg1:#0A0E18; --bg2:#0F1B2E; --ink:#F2F5F8; --muted:#AFC4D8;
+  --line:#243247;
+  --c-cyan:#66E0FF; --c-gold:#F3C777;
+  --c-spotify:#1DB954; --c-youtube:#FF0033; --c-ytm:#FF0033; --c-apple:#FA2B63;
+  --c-bandcamp:#1DA0C3; --c-amazon:#7C3AED; --c-inst:#DB2777; --c-x:#D1D5DB; --c-tt:#69C9D0;
+  --font: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Noto Sans", sans-serif;
+  --serif: Georgia, "Times New Roman", Times, serif;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:
+ radial-gradient(1200px 600px at 70% -10%, rgba(102,224,255,.10), transparent 60%),
+ radial-gradient(900px 700px at 10% 110%, rgba(243,199,119,.10), transparent 60%),
+ linear-gradient(180deg, var(--bg1), var(--bg2)); color:var(--ink); font-family:var(--font); line-height:1.6}
+a{color:var(--c-cyan);text-decoration:none}
+a:hover{text-decoration:underline}
+.container{max-width:1080px;margin:0 auto;padding:28px}
+.header{position:sticky;top:0;z-index:10;background:rgba(10,14,24,.75);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:12px 28px}
+.nav .brand a{font-weight:700;font-family:var(--serif);letter-spacing:.2px;color:var(--ink)}
+.nav a{color:var(--ink);opacity:.9}
+.nav a.active{color:var(--c-gold);opacity:1}
+main{padding-top:8px}
+/* HERO */
+.hero{padding:28px 0;border-bottom:1px solid var(--line)}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center}
+.hero .cover{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#0e1624}
+.hero .cover img{display:block;width:100%;height:auto}
+.hero h1{font-family:var(--serif);font-size:36px;margin:0 0 6px}
+.hero .sub{color:var(--muted);margin:0 0 10px}
+.badges{display:flex;gap:8px;flex-wrap:wrap}
+.badge{border:1px solid var(--line);border-radius:999px;padding:4px 10px;color:var(--muted);font-size:12px;background:linear-gradient(180deg,#0f1624,#0b1422)}
+.button-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+.btn{display:inline-flex;gap:10px;align-items:center;padding:10px 14px;border:1px solid var(--line);border-radius:12px;background:#0B1422;color:var(--ink);transition:transform .15s ease, box-shadow .2s ease}
+.btn:hover{box-shadow:0 6px 18px rgba(7,15,28,.35);transform:translateY(-1px)}
+.ico{width:18px;height:18px;display:inline-block;background:currentColor;mask-size:contain;mask-repeat:no-repeat;mask-position:center}
+/* platform colors */
+.link-spotify{border-color:color-mix(in srgb, var(--c-spotify), transparent 70%)}
+.link-spotify:hover{outline:1px solid color-mix(in srgb, var(--c-spotify), transparent 40%)}
+.ico.spotify{mask-image:url('../icons/spotify.svg')}
+
+.link-youtube{border-color:color-mix(in srgb, var(--c-youtube), transparent 70%)}
+.link-youtube:hover{outline:1px solid color-mix(in srgb, var(--c-youtube), transparent 40%)}
+.ico.youtube{mask-image:url('../icons/youtube.svg')}
+
+.link-ytm{border-color:color-mix(in srgb, var(--c-ytm), transparent 70%)}
+.link-ytm:hover{outline:1px solid color-mix(in srgb, var(--c-ytm), transparent 40%)}
+.ico.ytm{mask-image:url('../icons/ytmusic.svg')}
+
+.link-apple{border-color:color-mix(in srgb, var(--c-apple), transparent 70%)}
+.link-apple:hover{outline:1px solid color-mix(in srgb, var(--c-apple), transparent 40%)}
+.ico.apple{mask-image:url('../icons/applemusic.svg')}
+
+.link-bandcamp{border-color:color-mix(in srgb, var(--c-bandcamp), transparent 70%)}
+.link-bandcamp:hover{outline:1px solid color-mix(in srgb, var(--c-bandcamp), transparent 40%)}
+.ico.bandcamp{mask-image:url('../icons/bandcamp.svg')}
+
+.link-amazon{border-color:color-mix(in srgb, var(--c-amazon), transparent 70%)}
+.link-amazon:hover{outline:1px solid color-mix(in srgb, var(--c-amazon), transparent 40%)}
+.ico.amazon{mask-image:url('../icons/amazonmusic.svg')}
+
+.link-inst{border-color:color-mix(in srgb, var(--c-inst), transparent 70%)}
+.link-inst:hover{outline:1px solid color-mix(in srgb, var(--c-inst), transparent 40%)}
+.ico.inst{mask-image:url('../icons/instagram.svg')}
+
+.link-x{border-color:color-mix(in srgb, var(--c-x), transparent 70%)}
+.link-x:hover{outline:1px solid color-mix(in srgb, var(--c-x), transparent 40%)}
+.ico.x{mask-image:url('../icons/x.svg')}
+
+.link-tt{border-color:color-mix(in srgb, var(--c-tt), transparent 70%)}
+.link-tt:hover{outline:1px solid color-mix(in srgb, var(--c-tt), transparent 40%)}
+.ico.tt{mask-image:url('../icons/tiktok.svg')}
+
+/* LINKS GRID */
+.links{padding:24px 0}
+.links .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.card{background:linear-gradient(180deg,#0f1624,#0b1422);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.card .body{padding:16px}
+.card h3{margin:0 0 6px;font-family:var(--serif)}
+.small{color:var(--muted);font-size:.94em}
+/* DISC GRID */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.kv{display:grid;grid-template-columns:110px 1fr;gap:6px}
+.figure{border-bottom:1px solid var(--line)}
+figure{margin:0}
+figure img{display:block;width:100%;height:180px;object-fit:cover}
+/* TRACK HEADER + VIDEO 9:16 */
+.track-hero{display:grid;grid-template-columns:1fr 1.2fr;gap:24px;align-items:center;margin-bottom:10px}
+.track-hero .cover{aspect-ratio:16/10;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:linear-gradient(135deg,#172237,#0d1422)}
+.track-hero .cover img{width:100%;height:100%;object-fit:cover}
+.yt-vertical{position:relative;width:100%;max-width:420px;aspect-ratio:9/16;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:#0F1B2E}
+.yt-vertical iframe{position:absolute;inset:0;width:100%;height:100%}
+blockquote{margin:14px 0;padding:16px;border-left:3px solid var(--c-gold);background:linear-gradient(180deg,#0f1624,#0b1422);border-radius:10px}
+/* Footer net */
+footer{border-top:1px solid var(--line);margin-top:36px;padding:22px 0;color:var(--muted)}
+/* Responsive */
+@media (max-width:860px){
+  .hero-grid{grid-template-columns:1fr}
+  .track-hero{grid-template-columns:1fr}
+}
+
+
+/* v6.2: barra d'enllaços compacta + ajust vídeo */
+.links-compact{padding:10px 0 0}
+.platform-bar{display:flex;flex-wrap:wrap;gap:8px}
+.pill{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border:1px solid var(--line);border-radius:999px;background:#0B1422;color:var(--ink);font-size:.95em}
+.pill .ico{width:16px;height:16px}
+.pill:hover{transform:translateY(-1px);box-shadow:0 6px 14px rgba(7,15,28,.25)}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(1px,1px,1px,1px)}
+.yt-vertical{max-width:380px;margin:10px 0 14px}
+
+
+/* v6.3: starfield, barra icon-only en mòbil, scroll suau */
+.hero{position:relative;overflow:hidden}
+.hero::before{
+  content:""; position:absolute; inset:0; pointer-events:none; opacity:.35;
+  background-image:
+   radial-gradient(1px 1px at 10% 20%, rgba(255,255,255,.9), transparent 60%),
+   radial-gradient(1px 1px at 30% 80%, rgba(255,255,255,.7), transparent 60%),
+   radial-gradient(1.2px 1.2px at 70% 30%, rgba(255,255,255,.8), transparent 60%),
+   radial-gradient(1.2px 1.2px at 85% 60%, rgba(255,255,255,.7), transparent 60%),
+   radial-gradient(1px 1px at 45% 50%, rgba(255,255,255,.5), transparent 60%);
+  background-repeat:no-repeat;
+}
+.platform-bar{display:flex;flex-wrap:wrap;gap:8px}
+@media (max-width:720px){
+  .platform-bar{flex-wrap:nowrap;overflow-x:auto;padding-bottom:6px;scroll-snap-type:x proximity}
+  .platform-bar .pill{scroll-snap-align:start}
+  .pill span:last-child{display:none} /* amaga el text, deixa icona */
+}
+.pill{white-space:nowrap}
+.pill:focus{outline:2px solid var(--c-cyan); outline-offset:2px}
+/* imatges i iframes: tocs */
+figure img, .hero .cover img{transition:transform .25s ease, opacity .2s ease}
+figure:hover img{transform:scale(1.01)}
+
+
+/* v6.6: icones hero + about amb barra de plataformes */
+.ico.play{mask-image:url('../icons/play.svg')}
+.ico.album{mask-image:url('../icons/album.svg')}
+.about-links{padding-top:6px}
+.about-links .platform-bar{display:flex;flex-wrap:wrap;gap:8px}
+
+
+/* v6.7: tracklist a l'índex */
+.tracklist{padding:8px 0 4px}
+.tl-title{font-family:var(--serif);margin:0 0 8px}
+.tl{list-style:none;counter-reset:track;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:6px 16px;padding:0;margin:0}
+.tl li{border-bottom:1px solid var(--line);padding:8px 0}
+.tl a{display:inline-flex;align-items:center;gap:10px;color:var(--ink)}
+.tl a:hover{color:var(--c-cyan)}
+.tl .num{display:inline-block;min-width:28px;text-align:right;font-variant-numeric:tabular-nums;color:var(--muted)}
+@media (max-width:720px){ .tl{grid-template-columns:1fr} }
+
+
+/* v6.8: mini play Spotify al tracklist */
+.tl li{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.tl li .pill{margin-left:auto}
+@media (max-width:720px){
+  .tl li{flex-wrap:wrap}
+  .tl li .pill{margin-left:0}
+}
+
+
+/* v7: icones inline <img> i tracklist clickable */
+.icon{width:18px;height:18px;display:inline-block;vertical-align:-3px;filter:invert(1) brightness(1.2)}
+.pill{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border:1px solid var(--line);border-radius:999px;background:#0B1422;color:var(--ink);font-size:.95em}
+.pill:hover{transform:translateY(-1px);box-shadow:0 6px 14px rgba(7,15,28,.25)}
+/* Hover colors per plataforma (border/outline) es mantenen dels estils existents */
+
+/* Tracklist clickable */
+.tl li{display:flex;align-items:center;gap:10px;justify-content:space-between;border-bottom:1px solid var(--line);padding:8px 0}
+.tl li a.track{flex:1;display:flex;align-items:center;gap:10px;color:var(--ink)}
+.tl li a.track:hover{color:var(--c-cyan)}
+.tl li .go{opacity:.8}
+.tl li .go:hover{opacity:1}
+
+
+/* v7.2 — icones inline i layout estable */
+.icon-wrap{display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;flex:0 0 20px}
+.icon-wrap svg{width:18px;height:18px;display:block;fill:currentColor}
+.button-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+.button-row .btn{display:inline-flex;align-items:center;gap:8px;min-height:40px;padding:10px 14px}
+.platform-bar .pill{display:inline-flex;align-items:center;gap:8px}
+.platform-bar{row-gap:10px}
+/* Evitar que el hero es desplaci: */
+.hero-grid{align-items:center}
+/* Millora visual dels petits badges */
+.badge{line-height:1;border-radius:999px}
+/* tracklist: espai fix per al chevron i alineació */
+.tl li .go{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px}
+.tl li .go .icon-wrap{width:16px;height:16px}

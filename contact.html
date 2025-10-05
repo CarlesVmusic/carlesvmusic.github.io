@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ca">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="./">
+<title>Contacte — Carles V</title>
+<link rel="stylesheet" href="assets/css/style.css">
+<meta name="color-scheme" content="dark light">
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<meta name="theme-color" content="#0a0b10">
+</head>
+<body>
+<header class="header">
+  <nav class="nav container" aria-label="Navegació primària">
+    <div class="brand"><a href="index.html">Carles V — Dins l’univers</a></div>
+    <div class="links">
+      <a href="index.html">Inici</a>
+      <a href="disc.html">Disc</a>
+      <a href="about.html">Sobre mi</a>
+      <a href="contact.html" class="active">Contacte</a>
+    </div>
+  </nav>
+</header>
+<main class="container">
+  <section>
+    <h1 style="font-family:var(--serif);margin:0 0 8px">Contacte</h1>
+    <p class="small">Si vols parlar de col·laboracions, llicències o qualsevol altra proposta, omple el formulari i s’obrirà el teu client de correu amb el missatge preparat.</p>
+    <form id="contactForm" class="card" style="padding:16px;max-width:720px">
+      <div style="display:grid;gap:12px">
+        <label>Nom<br>
+          <input type="text" id="name" required style="width:100%;padding:10px;border:1px solid var(--line);border-radius:10px;background:#0B1422;color:var(--ink)">
+        </label>
+        <label>Correu electrònic<br>
+          <input type="email" id="email" required style="width:100%;padding:10px;border:1px solid var(--line);border-radius:10px;background:#0B1422;color:var(--ink)">
+        </label>
+        <label>Assumpte<br>
+          <input type="text" id="subject" placeholder="Proposta / Contractació / Col·laboració..." required style="width:100%;padding:10px;border:1px solid var(--line);border-radius:10px;background:#0B1422;color:var(--ink)">
+        </label>
+        <label>Missatge<br>
+          <textarea id="message" rows="6" required style="width:100%;padding:10px;border:1px solid var(--line);border-radius:10px;background:#0B1422;color:var(--ink)"></textarea>
+        </label>
+        <button type="submit" class="btn"><span class="icon-wrap"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M4 3l7.2 9.1L4 21h2.3l6-7.4 4.8 7.4H20l-7-10.4L19.6 3H17.3l-5.6 6.9L7.4 3H4z"/></svg></span> Enviar</button>
+        <p class="small">Nota: la web és estàtica (GitHub Pages). El formulari utilitza el teu client de correu per enviar el missatge.</p>
+      </div>
+    </form>
+  </section>
+</main>
+<footer>
+  <div class="container small">© 2025 Carles V — Projecte musical independent. · Distribuït per RouteNote</div>
+</footer>
+<script>
+document.getElementById('contactForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  const name = encodeURIComponent(document.getElementById('name').value.trim());
+  const from = encodeURIComponent(document.getElementById('email').value.trim());
+  const subj = encodeURIComponent(document.getElementById('subject').value.trim());
+  const msg  = encodeURIComponent(document.getElementById('message').value.trim());
+  // Assumpció d'adreça: si és diferent, la canviarem ràpid. He posat @gmail.com perquè 'carlesvmusic.gmail.com' semblava domini, no bústia.
+  const to = 'carlesvmusic@gmail.com';
+  const body = `Nom: ${name}%0ACorreu: ${from}%0A%0AMissatge:%0A${msg}`;
+  window.location.href = `mailto:${to}?subject=${subj}&body=${body}`;
+});
+</script>
+</body>
+</html>
