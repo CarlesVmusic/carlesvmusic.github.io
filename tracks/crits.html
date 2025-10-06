@@ -63,6 +63,98 @@
 </main>
 <footer><div class="container small">© 2025 Carles V — Projecte musical independent. · Distribuït per RouteNote</div></footer>
 <script src="assets/js/main.js"></script>
+<!-- visit-tracker (GAS) start -->
+<script>
+(function(){
+  try{
+    if (window.__vt_sent__) return; window.__vt_sent__=true;
+    var d = new URLSearchParams();
+    d.append('path', location.pathname + location.search);
+    d.append('referrer', document.referrer || '');
+    var p = new URLSearchParams(location.search);
+    ['utm_source','utm_medium','utm_campaign','utm_term','utm_content'].forEach(function(k){
+      var v=p.get(k); if(v) d.append(k,v);
+    });
+    var ENDPOINT = 'https://script.google.com/macros/s/AKfycbzdVFIUnu_0biTR0QTe-8hNVShEeCOKG5QgL6yGMYr97cFs3CJfOxnLnBF1Q_UlsxkvcA/exec'; // TODO: reemplaza por tu URL de Apps Script que termina en /exec
+    if(navigator.sendBeacon){
+      var b=new Blob([d.toString()],{type:'application/x-www-form-urlencoded'});
+      navigator.sendBeacon(ENDPOINT,b);
+    } else {
+      fetch(ENDPOINT,{method:'POST',body:d,keepalive:true,headers:{'Content-Type':'application/x-www-form-urlencoded'}});
+    }
+  }catch(_{}){}
+})();
+</script>
+<!-- visit-tracker (GAS) end -->
+
+<!-- visible-visit-counter (JSONP) start -->
+<style>
+  .cv-counter-badge{
+    position:fixed; right:16px; bottom:16px; z-index:9999;
+    background:rgba(255,255,255,.92); backdrop-filter:saturate(180%) blur(8px);
+    border:1px solid rgba(0,0,0,.08); border-radius:999px; padding:6px 12px;
+    font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+    font-size:12px; color:#374151; box-shadow:0 2px 10px rgba(0,0,0,.08);
+  }
+  @media (max-width: 640px){ .cv-counter-badge{ font-size:11px; right:12px; bottom:12px; } }
+</style>
+<div class="cv-counter-badge" id="cvCounter" aria-live="polite" title="Visites totals">Visites: —</div>
+<script>
+(function(){
+  // Define endpoint locally
+  var ENDPOINT = "https://script.google.com/macros/s/AKfycbzdVFIUnu_0biTR0QTe-8hNVShEeCOKG5QgL6yGMYr97cFs3CJfOxnLnBF1Q_UlsxkvcA/exec";
+  // 10-minute throttle; ?force=1 overrides
+  try {
+    var KEY = 'cv_last_hit_ts';
+    var now = Date.now();
+    var last = parseInt(localStorage.getItem(KEY) || '0', 10);
+    var TEN_MIN = 10 * 60 * 1000;
+    var qs = location.search ? location.search.substring(1) : '';
+    var params = new URLSearchParams(qs);
+    var force = (params.has('force') && params.get('force') !== '0');
+    var shouldSend = force || (!last || (now - last) > TEN_MIN);
+
+    if (shouldSend) {
+      if (force) console.log('[cv] forcing hit (ignore 10min throttle)');
+      localStorage.setItem(KEY, String(now));
+      var p = new URLSearchParams();
+      p.append('hit','1');
+      p.append('path', location.pathname + location.search);
+      p.append('referrer', document.referrer || '');
+      var utms = ['utm_source','utm_medium','utm_campaign','utm_term','utm_content'];
+      for (var i=0;i<utms.length;i++) {
+        var k = utms[i];
+        var v = params.get(k);
+        if (v) p.append(k, v);
+      }
+      var img = new Image(1,1);
+      img.referrerPolicy = 'no-referrer-when-downgrade';
+      var url = ENDPOINT + '?' + p.toString() + '&ts=' + Date.now();
+      console.log('[cv] sending hit:', url);
+      img.src = url;
+    } else {
+      console.log('[cv] throttled (10min window). Last:', last, 'Now:', now);
+    }
+  } catch(e) { console.warn('[cv] error sending hit', e); }
+
+  // Read total via JSONP with cache-buster
+  try {
+    var cb = 'CV_CB_' + Math.random().toString().slice(2);
+    window[cb] = function(data){
+      try {
+        var t = (data && typeof data.total !== 'undefined') ? data.total : null;
+        if (t !== null) document.getElementById('cvCounter').textContent = 'Visites: ' + (t.toLocaleString ? t.toLocaleString() : t);
+      } catch(_e){}
+      try { delete window[cb]; } catch(_d){}
+    };
+    var s = document.createElement('script');
+    s.src = ENDPOINT + '?summary=1&callback=' + cb + '&ts=' + Date.now();
+    document.head.appendChild(s);
+  } catch(e) { console.warn('[cv] error loading total', e); }
+})();
+</script>
+<!-- visible-visit-counter (JSONP) end -->
+
 </body>
 </html>
 
