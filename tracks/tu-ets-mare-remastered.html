@@ -70,7 +70,7 @@
     ['utm_source','utm_medium','utm_campaign','utm_term','utm_content'].forEach(function(k){
       var v=p.get(k); if(v) d.append(k,v);
     });
-    var ENDPOINT = 'https://script.google.com/macros/s/AKfycbzdVFIUnu_0biTR0QTe-8hNVShEeCOKG5QgL6yGMYr97cFs3CJfOxnLnBF1Q_UlsxkvcA/exec'; // TODO: reemplaza por tu URL de Apps Script que termina en /exec
+    var ENDPOINT = 'https://script.google.com/macros/s/AKfycbyV8__2J-ASXvE3tYjDB6gvxtO8TCZfk8FV0pH7JzEZOBFoUMUS0_5jy-mGw3kyVZP6/exec'; // TODO: reemplaza por tu URL de Apps Script que termina en /exec
     if(navigator.sendBeacon){
       var b=new Blob([d.toString()],{type:'application/x-www-form-urlencoded'});
       navigator.sendBeacon(ENDPOINT,b);
@@ -97,7 +97,7 @@
 <script>
 (function(){
   // Define endpoint locally
-  var ENDPOINT = "https://script.google.com/macros/s/AKfycbzdVFIUnu_0biTR0QTe-8hNVShEeCOKG5QgL6yGMYr97cFs3CJfOxnLnBF1Q_UlsxkvcA/exec";
+  var ENDPOINT = "https://script.google.com/macros/s/AKfycbyV8__2J-ASXvE3tYjDB6gvxtO8TCZfk8FV0pH7JzEZOBFoUMUS0_5jy-mGw3kyVZP6/exec";
   // 10-minute throttle; ?force=1 overrides
   try {
     var KEY = 'cv_last_hit_ts';
