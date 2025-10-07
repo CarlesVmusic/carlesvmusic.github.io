@@ -1,0 +1,10 @@
+/* TEAM */
+Developer: Carles V
+From: Catalunya (ES)
+Site: https://www.carlesvives.cat/
+
+/* THANKS */
+Fet amb il·lusió i paciència.
+
+/* LAST UPDATE */
+2025-10-07

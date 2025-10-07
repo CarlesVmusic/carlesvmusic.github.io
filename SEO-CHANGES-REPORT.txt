@@ -1,0 +1,102 @@
+[about.html] +meta robots
+[about.html] +canonical https://www.carlesvives.cat/about.html
+[about.html] +og:site_name
+[about.html] +JSON-LD Person
+[contact.html] +meta robots
+[contact.html] +canonical https://www.carlesvives.cat/contact.html
+[contact.html] +og:site_name
+[contact.html] +og:title
+[contact.html] +og:description
+[contact.html] +og:url
+[contact.html] +og:type=website
+[contact.html] +JSON-LD Person
+[disc.html] +meta robots
+[disc.html] +canonical https://www.carlesvives.cat/disc.html
+[disc.html] +og:site_name
+[disc.html] +JSON-LD Person
+[disc.html] +JSON-LD MusicAlbum
+[index.html] +meta robots
+[index.html] +canonical https://www.carlesvives.cat/
+[index.html] +og:url
+[index.html] +JSON-LD Person
+[index.html] +JSON-LD WebSite
+[tracks/a-foc-lent.html] +meta robots
+[tracks/a-foc-lent.html] +canonical https://www.carlesvives.cat/tracks/a-foc-lent.html
+[tracks/a-foc-lent.html] +og:site_name
+[tracks/a-foc-lent.html] +og:title
+[tracks/a-foc-lent.html] +og:description
+[tracks/a-foc-lent.html] +og:url
+[tracks/a-foc-lent.html] +og:type=website
+[tracks/a-foc-lent.html] +JSON-LD Person
+[tracks/clavat-al-mar.html] +meta robots
+[tracks/clavat-al-mar.html] +canonical https://www.carlesvives.cat/tracks/clavat-al-mar.html
+[tracks/clavat-al-mar.html] +og:site_name
+[tracks/clavat-al-mar.html] +og:title
+[tracks/clavat-al-mar.html] +og:description
+[tracks/clavat-al-mar.html] +og:url
+[tracks/clavat-al-mar.html] +og:type=website
+[tracks/clavat-al-mar.html] +JSON-LD Person
+[tracks/crits.html] +meta robots
+[tracks/crits.html] +canonical https://www.carlesvives.cat/tracks/crits.html
+[tracks/crits.html] +og:site_name
+[tracks/crits.html] +og:title
+[tracks/crits.html] +og:description
+[tracks/crits.html] +og:url
+[tracks/crits.html] +og:type=website
+[tracks/crits.html] +JSON-LD Person
+[tracks/el-teu-lloc.html] +meta robots
+[tracks/el-teu-lloc.html] +canonical https://www.carlesvives.cat/tracks/el-teu-lloc.html
+[tracks/el-teu-lloc.html] +og:site_name
+[tracks/el-teu-lloc.html] +og:title
+[tracks/el-teu-lloc.html] +og:description
+[tracks/el-teu-lloc.html] +og:url
+[tracks/el-teu-lloc.html] +og:type=website
+[tracks/el-teu-lloc.html] +JSON-LD Person
+[tracks/fins-que-passi-el-vent.html] +meta robots
+[tracks/fins-que-passi-el-vent.html] +canonical https://www.carlesvives.cat/tracks/fins-que-passi-el-vent.html
+[tracks/fins-que-passi-el-vent.html] +og:site_name
+[tracks/fins-que-passi-el-vent.html] +og:title
+[tracks/fins-que-passi-el-vent.html] +og:description
+[tracks/fins-que-passi-el-vent.html] +og:url
+[tracks/fins-que-passi-el-vent.html] +og:type=website
+[tracks/fins-que-passi-el-vent.html] +JSON-LD Person
+[tracks/gira-al-reves.html] +meta robots
+[tracks/gira-al-reves.html] +canonical https://www.carlesvives.cat/tracks/gira-al-reves.html
+[tracks/gira-al-reves.html] +og:site_name
+[tracks/gira-al-reves.html] +og:title
+[tracks/gira-al-reves.html] +og:description
+[tracks/gira-al-reves.html] +og:url
+[tracks/gira-al-reves.html] +og:type=website
+[tracks/gira-al-reves.html] +JSON-LD Person
+[tracks/quan-creia-que-ja-ho-tenia-tot.html] +meta robots
+[tracks/quan-creia-que-ja-ho-tenia-tot.html] +canonical https://www.carlesvives.cat/tracks/quan-creia-que-ja-ho-tenia-tot.html
+[tracks/quan-creia-que-ja-ho-tenia-tot.html] +og:site_name
+[tracks/quan-creia-que-ja-ho-tenia-tot.html] +og:title
+[tracks/quan-creia-que-ja-ho-tenia-tot.html] +og:description
+[tracks/quan-creia-que-ja-ho-tenia-tot.html] +og:url
+[tracks/quan-creia-que-ja-ho-tenia-tot.html] +og:type=website
+[tracks/quan-creia-que-ja-ho-tenia-tot.html] +JSON-LD Person
+[tracks/tu-ets-mare.html] +meta robots
+[tracks/tu-ets-mare.html] +canonical https://www.carlesvives.cat/tracks/tu-ets-mare.html
+[tracks/tu-ets-mare.html] +og:site_name
+[tracks/tu-ets-mare.html] +og:title
+[tracks/tu-ets-mare.html] +og:description
+[tracks/tu-ets-mare.html] +og:url
+[tracks/tu-ets-mare.html] +og:type=website
+[tracks/tu-ets-mare.html] +JSON-LD Person
+[tracks/tu-ets-mare-remastered.html] +meta robots
+[tracks/tu-ets-mare-remastered.html] +canonical https://www.carlesvives.cat/tracks/tu-ets-mare-remastered.html
+[tracks/tu-ets-mare-remastered.html] +og:site_name
+[tracks/tu-ets-mare-remastered.html] +og:title
+[tracks/tu-ets-mare-remastered.html] +og:description
+[tracks/tu-ets-mare-remastered.html] +og:url
+[tracks/tu-ets-mare-remastered.html] +og:type=website
+[tracks/tu-ets-mare-remastered.html] +JSON-LD Person
+[tracks/univers.html] +meta robots
+[tracks/univers.html] +canonical https://www.carlesvives.cat/tracks/univers.html
+[tracks/univers.html] +og:site_name
+[tracks/univers.html] +og:title
+[tracks/univers.html] +og:description
+[tracks/univers.html] +og:url
+[tracks/univers.html] +og:type=website
+[tracks/univers.html] +JSON-LD Person
