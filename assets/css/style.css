@@ -192,3 +192,27 @@ figure:hover img{transform:scale(1.01)}
 /* tracklist: espai fix per al chevron i alineació */
 .tl li .go{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px}
 .tl li .go .icon-wrap{width:16px;height:16px}
+
+
+/* --- Bandcamp integration refinements (2025-10-09) --- */
+.buyline { margin: 12px 0 8px; font-size: 1.02rem; line-height: 1.55; opacity: 0.95; }
+.button-row { margin-top: 6px; }
+.button-row .btn { display: inline-block; text-decoration: none; }
+.button-row .btn:focus { outline: 2px solid currentColor; outline-offset: 2px; }
+
+
+/* --- Bandcamp button deluxe (2025-10-09) --- */
+.btn.bandcamp { 
+  display: inline-flex; align-items: center; gap: 10px;
+  padding: 10px 16px; border-radius: 999px; border: 1px solid rgba(255,255,255,.18);
+  background: rgba(255,255,255,.04); box-shadow: 0 2px 8px rgba(0,0,0,.15);
+  backdrop-filter: blur(3px);
+}
+.btn.bandcamp .icon { width: 18px; height: 18px; display: inline-block; }
+.btn.bandcamp .label { font-weight: 600; }
+.btn.bandcamp .meta { opacity: .8; font-size: .95em; margin-left: 2px; }
+.btn.bandcamp:hover { transform: translateY(-1px); box-shadow: 0 4px 14px rgba(0,0,0,.18); }
+.btn.bandcamp:active { transform: translateY(0); box-shadow: 0 2px 8px rgba(0,0,0,.15); }
+
+
+
