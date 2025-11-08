@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Futurs projectes — Carles V</title>
+  <link rel="icon" href="assets/img/favicon.ico" />
+  <style>
+    :root {
+      --bg: #0f172a;
+      --panel: rgba(2,6,23,.55);
+      --stroke: rgba(148,163,184,.08);
+      --text: #e2e8f0;
+      --muted: rgba(226,232,240,.6);
+      --accent: #38bdf8;
+    }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      display: flex;
+      justify-content: center;
+      min-height: 100vh;
+    }
+    .page {
+      width: min(1080px, 100%);
+      padding: 1.75rem 1.1rem 3.2rem;
+    }
+    .back {
+      font-size: .75rem;
+      color: var(--muted);
+      text-decoration: none;
+    }
+    .hero-card {
+      margin-top: 1.4rem;
+      background: rgba(15,23,42,.45);
+      border: 1px solid rgba(148,163,184,.05);
+      border-radius: 1.1rem;
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 1.25rem;
+      padding: 1.25rem 1.25rem 1.4rem;
+    }
+    .hero-card img {
+      width: 100%;
+      border-radius: .9rem;
+      border: 1px solid rgba(148,163,184,.03);
+      object-fit: cover;
+      background: #020617;
+    }
+    h1 { margin: 0; font-size: 1.6rem; }
+    .muted { color: var(--muted); }
+    audio {
+      width: 100%;
+      margin-top: 1rem;
+    }
+
+    /* --- FORMULARI PRO --- */
+    .feedback-block {
+      margin-top: 1.8rem;
+      background: rgba(2,6,23,.55);
+      border: 1px solid rgba(148,163,184,.04);
+      border-radius: 1rem;
+      padding: 1.35rem 1.4rem 1.5rem;
+    }
+    .feedback-head h2 {
+      margin: 0;
+      font-size: 1.02rem;
+      font-weight: 700;
+    }
+    .feedback-head p {
+      margin: .35rem 0 1.1rem;
+      color: rgba(226,232,240,.55);
+      font-size: .78rem;
+      max-width: 50rem;
+    }
+    .feedback-form {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1rem 1.2rem;
+      margin-bottom: 1.3rem;
+    }
+    .field-group {
+      display: flex;
+      flex-direction: column;
+      gap: .35rem;
+    }
+    .field-group.full {
+      grid-column: 1 / -1;
+    }
+    .field-group label {
+      font-size: .68rem;
+      color: rgba(226,232,240,.5);
+    }
+    .field-group input,
+    .field-group textarea {
+      background: rgba(15,23,42,.25);
+      border: 1px solid rgba(148,163,184,.22);
+      border-radius: .6rem;
+      padding: .55rem .65rem;
+      color: #e2e8f0;
+      font-size: .8rem;
+      transition: border .15s ease, box-shadow .15s ease;
+    }
+    .field-group input:focus,
+    .field-group textarea:focus {
+      border: 1px solid rgba(56,189,248,.8);
+      box-shadow: 0 0 0 3px rgba(56,189,248,.09);
+      outline: none;
+    }
+    .field-group textarea {
+      min-height: 130px;
+      resize: vertical;
+    }
+    .btn-primary {
+      background: #38bdf8;
+      color: #020617;
+      border: none;
+      border-radius: .6rem;
+      padding: .55rem .95rem;
+      font-weight: 600;
+      width: fit-content;
+      cursor: pointer;
+      transition: transform .12s ease, box-shadow .12s ease;
+      grid-column: 1 / -1;
+    }
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 10px 25px rgba(56,189,248,.25);
+    }
+    .error-msg {
+      grid-column: 1 / -1;
+      color: #fca5a5;
+      font-size: .7rem;
+      display: none;
+    }
+    .feedback-list {
+      display: flex;
+      flex-direction: column;
+      gap: .7rem;
+    }
+    .feedback-list .comment-item {
+      background: rgba(15,23,42,.3);
+      border: 1px solid rgba(148,163,184,.02);
+      border-radius: .55rem;
+      padding: .5rem .6rem .6rem;
+    }
+    .feedback-list .comment-meta {
+      font-size: .62rem;
+      color: rgba(226,232,240,.4);
+      margin-bottom: .3rem;
+    }
+    .feedback-list .comment-text {
+      font-size: .78rem;
+      line-height: 1.4;
+    }
+    .note {
+      margin-top: .5rem;
+      font-size: .62rem;
+      color: rgba(226,232,240,.35);
+    }
+    @media (max-width: 820px) {
+      .hero-card { grid-template-columns: 1fr; }
+      .feedback-form { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <a href="index.html" class="back">← Tornar a l'inici</a>
+
+    <div class="hero-card">
+      <img src="assets/img/futurs-projectes.svg" alt="Futurs projectes">
+      <div>
+        <h1>Futurs projectes</h1>
+        <p class="muted">Això forma part d’un projecte obert i inclusiu. Abans de publicar vull escoltar què us agrada, què canviaríeu i què us ha fet sentir. El vostre feedback m’ajuda a acabar la cançó millor.</p>
+        <h2 style="margin-top:.6rem;">Tornar a mirar</h2>
+        <p class="muted" style="margin-bottom:.5rem;">Versió demo · escolta-la sencera</p>
+        <audio controls>
+          <source src="Assets/Demos/Tornar a mirar.mp3" type="audio/mpeg">
+          El teu navegador no suporta l'àudio.
+        </audio>
+      </div>
+    </div>
+
+    <!-- BLOC DE FEEDBACK PRO -->
+    <section class="feedback-block">
+      <div class="feedback-head">
+        <h2>Comparteix la teva opinió</h2>
+        <p>Digues què t’ha funcionat i què no. Ho llegiré tot i ho faré servir per polir la versió final.</p>
+      </div>
+
+      <form id="commentForm" class="feedback-form">
+        <div class="field-group">
+          <label for="name">Nom (opcional)</label>
+          <input id="name" name="name" type="text" placeholder="Ex. Marta, Jordi, Anònim…">
+        </div>
+        <div class="field-group full">
+          <label for="text">Comentari</label>
+          <textarea id="text" name="text" placeholder="Què t’ha semblat la cançó? T’ha arribat? Què hi canviaries?"></textarea>
+        </div>
+        <button type="submit" class="btn-primary">Enviar comentari</button>
+        <p class="error-msg" id="errorMsg">No s’ha pogut enviar. Revisa i torna-ho a provar.</p>
+      </form>
+
+      <div id="commentList" class="feedback-list">
+        <!-- aquí surten els comentaris del Google Script -->
+      </div>
+      <p class="note">Les opinions que escriviu aquí se m’envien al meu full de Google.</p>
+    </section>
+  </div>
+
+  <!-- JS que parla amb el teu Apps Script -->
+  <script>
+  const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyDXdV2Du-uR7CAf1KT113KHzofBe-yWX6pmWTfrGMpJvqH6qI3f1vo3XFqXzfaFsBjvg/exec";
+
+  async function loadComments() {
+    try {
+      const res = await fetch(GOOGLE_SCRIPT_URL + "?action=list");
+      const data = await res.json();
+      const listEl = document.getElementById("commentList");
+      listEl.innerHTML = "";
+      (data.comments || []).forEach(c => {
+        const item = document.createElement("div");
+        item.className = "comment-item";
+        item.innerHTML = `
+          <div class="comment-meta">${c.name || "Anònim"} · ${c.date || ""}</div>
+          <div class="comment-text">${c.text || ""}</div>
+        `;
+        listEl.appendChild(item);
+      });
+    } catch (e) {
+      console.warn("No s'han pogut carregar els comentaris", e);
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const form = document.getElementById("commentForm");
+    const err = document.getElementById("errorMsg");
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      err.style.display = "none";
+      const name = document.getElementById("name").value;
+      const text = document.getElementById("text").value;
+      if (!text.trim()) {
+        err.textContent = "Escriu un comentari abans d’enviar.";
+        err.style.display = "block";
+        return;
+      }
+      try {
+        const res = await fetch(GOOGLE_SCRIPT_URL, {
+          method: "POST",
+          body: new URLSearchParams({
+            action: "add",
+            name,
+            text
+          })
+        });
+        const data = await res.json();
+        if (data.status === "ok") {
+          form.reset();
+          loadComments();
+        } else {
+          err.textContent = "No s’ha pogut enviar. Revisa el Google Script.";
+          err.style.display = "block";
+        }
+      } catch (e) {
+        err.textContent = "Error d’enviament.";
+        err.style.display = "block";
+      }
+    });
+
+    loadComments();
+  });
+  </script>
+</body>
+</html>
