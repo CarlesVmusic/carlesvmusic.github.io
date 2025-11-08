@@ -178,7 +178,7 @@
         <h2 style="margin-top:.6rem;">Tornar a mirar</h2>
         <p class="muted" style="margin-bottom:.5rem;">Versió demo · escolta-la sencera</p>
         <audio controls>
-          <source src="Assets/Demos/Tornar a mirar.mp3" type="audio/mpeg">
+          <source src="Assets/Demos/tornar-a-mirar.mp3" type="audio/mpeg">
           El teu navegador no suporta l'àudio.
         </audio>
       </div>
@@ -211,9 +211,10 @@
     </section>
   </div>
 
+  
   <!-- JS que parla amb el teu Apps Script -->
   <script>
-  const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyDXdV2Du-uR7CAf1KT113KHzofBe-yWX6pmWTfrGMpJvqH6qI3f1vo3XFqXzfaFsBjvg/exec";
+  const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwChKMI_YQNfjE7M3q3-EkvCMeaW4En6DvVDUs3mCbd6gooLeAtate_LCplEmFOwel4/exec";
 
   async function loadComments() {
     try {
@@ -252,22 +253,34 @@
       try {
         const res = await fetch(GOOGLE_SCRIPT_URL, {
           method: "POST",
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8"
+          },
           body: new URLSearchParams({
             action: "add",
             name,
             text
           })
         });
-        const data = await res.json();
+        let data = {};
+        try {
+          data = await res.json();
+        } catch(parseErr) {
+          console.error("No s'ha pogut llegir la resposta del Google Script. Pot ser un problema de CORS o de permisos.");
+          err.textContent = "Error d’enviament (revisa permisos de l'script: 'Qualsevol amb l'enllaç').";
+          err.style.display = "block";
+          return;
+        }
         if (data.status === "ok") {
           form.reset();
           loadComments();
         } else {
-          err.textContent = "No s’ha pogut enviar. Revisa el Google Script.";
+          err.textContent = "El script ha respost però no amb 'ok'. Revisa el codi de Google.";
           err.style.display = "block";
         }
       } catch (e) {
-        err.textContent = "Error d’enviament.";
+        console.error("Error de xarxa:", e);
+        err.textContent = "Error d’enviament (xarxa o CORS).";
         err.style.display = "block";
       }
     });
