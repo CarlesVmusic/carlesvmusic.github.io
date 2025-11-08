@@ -128,7 +128,7 @@
         <h2 style="margin-top:.6rem;">Tornar a mirar</h2>
         <p class="muted" style="margin-bottom:.5rem;">Versió demo · escolta-la sencera</p>
         <audio controls>
-          <source src="Assets/Demos/Tornar%20a%20mirar.mp3" type="audio/mpeg">
+          <source src="assets/demos/1.mp3" type="audio/mpeg">
           El teu navegador no suporta l'àudio.
         </audio>
       </div>
@@ -159,10 +159,8 @@
   </div>
 
   <script>
-  // URL nova del teu script
   const GS_URL = "https://script.google.com/macros/s/AKfycbwChKMI_YQNfjE7M3q3-EkvCMeaW4En6DvVDUs3mCbd6gooLeAtate_LCplEmFOwel4/exec";
 
-  // JSONP loader per esquivar CORS
   function loadCommentsJSONP() {
     const cbName = "cb_" + Math.random().toString(36).substring(2);
     window[cbName] = function(data) {
@@ -177,7 +175,6 @@
         `;
         listEl.appendChild(div);
       });
-      // neteja
       delete window[cbName];
     };
     const s = document.createElement("script");
@@ -199,22 +196,14 @@
         err.style.display = "block";
         return;
       }
-      // enviem sense llegir resposta (per evitar CORS) i recarreguem
       try {
         await fetch(GS_URL, {
           method: "POST",
-          headers: {
-            "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8"
-          },
-          body: new URLSearchParams({
-            action: "add",
-            name,
-            text
-          })
+          headers: { "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8" },
+          body: new URLSearchParams({ action: "add", name, text })
         });
         form.reset();
-        // tornem a carregar via JSONP
-        setTimeout(loadCommentsJSONP, 600);
+        setTimeout(loadCommentsJSONP, 700);
       } catch (e) {
         err.textContent = "No s'ha pogut enviar (xarxa).";
         err.style.display = "block";
