@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="ca">
 <head>
 <meta charset="utf-8"/>
@@ -9,17 +8,20 @@
 <link href="assets/css/style.css" rel="stylesheet"/>
 <meta content="dark light" name="color-scheme"/>
 <meta content="Carles V — Dins l’univers (2025). Projecte musical independent, sense discogràfica ni concerts. Web oficial." name="description"/>
-<meta content="Carles V" name="author"/>
-<meta content="Carles V — Dins l’univers (2025)" property="og:title"/>
-<meta content="Projecte musical independent. Web oficial." property="og:description"/>
-<meta content="website" property="og:type"/>
-<meta content="assets/img/cover.png" property="og:image"/>
-<meta content="" property="og:url"/>
-<meta content="summary_large_image" name="twitter:card"/>
-<link href="assets/img/favicon.png" rel="icon" type="image/png"/>
-<link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"/>
 <meta content="#0a0b10" name="theme-color"/>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Carles V", "alternateName": "Carles Vives", "url": "https://www.carlesvives.cat/", "image": "https://www.carlesvives.cat/assets/img/og-image.jpg", "jobTitle": "Músic independent", "homeLocation": {"@type": "Place", "address": {"@type": "PostalAddress", "addressRegion": "Catalunya", "addressCountry": "ES"}}, "sameAs": ["https://carlesvives.bandcamp.com/", "https://x.com/carlesv_music?s=21&t=g0ItsxEC83VRl7yHCkt21w", "https://open.spotify.com/intl-es/artist/52qImPTQgKRWEMkkcunfgp?si=qqcZwaEJSsWvGdoYyjtpcw", "https://music.apple.com/es/artist/carles-v/1817843157", "https://music.youtube.com/playlist?list=OLAK5uy_m9PAokegAQka0ocol_H6LfxYlsUZ3oQmo", "https://www.youtube.com/@carlesvmusic", "https://www.instagram.com/carlesv_music/"]}</script></head>
+<style>
+.hero-banner{position:relative;display:grid;place-items:center;min-height:36vh;border-radius:16px;overflow:hidden;background:#0b0f1a url('assets/img/hero.png') center/cover no-repeat;margin:24px 0;}
+.hero-banner::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.35),rgba(0,0,0,.6));}
+.hero-inner{position:relative;text-align:center;color:#fff;padding:48px 16px;}
+.hero-inner h1{margin:0 0 8px;font-size:clamp(28px,4vw,40px);}
+.hero-inner p{margin:0;opacity:.9}
+.about-wrap{max-width:900px;margin:0 auto;}
+.about-content{line-height:1.75;font-size:1.05rem;}
+.about-content p{margin:0 0 14px;}
+.about-values{margin:18px 0 8px;padding-left:18px;}
+.about-values li{margin:8px 0;}
+</style>
+</head>
 <body>
 <header class="header">
 <nav aria-label="Navegació primària" class="nav container">
@@ -32,132 +34,62 @@
 </div>
 </nav>
 </header>
+
 <main class="container">
-<section>
-<div class="track-hero">
-<div class="cover">
-<!-- Porta imatge principal a: assets/img/hero.png -->
-<img alt="Hero del projecte (puja assets/img/hero.png)" loading="lazy" src="assets/img/hero.png"/>
-</div>
-<div>
-<h1>Sobre mi</h1>
-<p class="small">Sóc en Carles V. Faig música digital i independent. El meu primer àlbum llarg és <em>Dins l’univers</em> (2025): 10 cançons sobre records, família i camins que giren al revés.</p>
-<ul class="small">
-<li>Sense concerts i sense contractació.</li>
-<li>Publicació digital i control creatiu total.</li>
-<li>Transparència i respecte pels oients.</li>
-</ul>
-</div>
-</div>
-<hr/>
+  <section class="hero-banner" role="img" aria-label="Hero del projecte">
+    <div class="hero-inner">
+      <h1>Sobre mi</h1>
+      <p>Carles V — música digital i independent. <em>Dins l’univers</em> (2025)</p>
+    </div>
+  </section>
+
+  
 <h2>Enllaços</h2>
 <section class="about-links">
 <nav aria-label="Enllaços oficials" class="platform-bar">
-<a aria-label="Spotify" class="pill link-spotify" href="https://open.spotify.com/album/2cm21lv2DqIP2DlC1qum8n?si=lGYHSq8FTi2cii3vWtsRPw" rel="noopener" target="_blank"><span <span="" class="icon-wrap"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm4.48 14.55a.8.8 0 01-1.1.27c-3.02-1.84-6.82-2.26-11.28-1.25a.8.8 0 11-.35-1.56c4.86-1.11 9.1-.64 12.49 1.42.38.23.5.73.24 1.12zm1.57-3.08a1 1 0 01-1.37.34c-3.46-2.11-8.73-2.72-12.82-1.51a1 1 0 11-.58-1.92c4.51-1.36 10.26-.69 14.17 1.68a1 1 0 01.6 1.41zm.13-3.32c-3.99-2.37-10.63-2.59-14.46-1.44a1.2 1.2 0 01-.68-2.3c4.44-1.33 11.83-1.07 16.46 1.68a1.2 1.2 0 01-1.32 2.06z" fill="currentColor"></path></svg></span><span>Spotify</span></a>
-<a aria-label="Apple Music" class="pill link-apple" href="https://music.apple.com/es/artist/carles-v/1817843157" rel="noopener" target="_blank"><span <span="" class="icon-wrap"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M16.5 3.1l-8 2V16a2.8 2.8 0 11-1.7-2.6V7.8l9.7-2.3v8.8A2.8 2.8 0 1115 11.7V3.1z" fill="currentColor"></path></svg></span><span>Apple Music</span></a>
-<a aria-label="YouTube Music" class="pill link-ytm" href="https://music.youtube.com/playlist?list=OLAK5uy_m9PAokegAQka0ocol_H6LfxYlsUZ3oQmo" rel="noopener" target="_blank"><span <span="" class="icon-wrap"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="currentColor"><circle cx="12" cy="12" r="10"></circle><path d="M10 15.5v-7l6 3.5-6 3.5z" fill="#000"></path></g></svg></span><span>YouTube Music</span></a>
-<a aria-label="YouTube" class="pill link-youtube" href="https://www.youtube.com/@carlesvmusic" rel="noopener" target="_blank"><span <span="" class="icon-wrap"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31 31 0 000 12a31 31 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31 31 0 0024 12a31 31 0 00-.5-5.8zM9.8 15.6V8.4l6.2 3.6-6.2 3.6z" fill="currentColor"></path></svg></span><span>YouTube</span></a>
-<a aria-label="Bandcamp" class="pill link-bandcamp" href="https://carlesv.bandcamp.com/" rel="noopener" target="_blank"><span <span="" class="icon-wrap"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7.2 5L1 19h9.8L18 5H7.2z" fill="currentColor"></path></svg></span><span>Bandcamp</span></a>
-<a aria-label="Amazon Music" class="pill link-amazon" href="https://music.amazon.es/artists/B0FB9LYZL2/carles-v" rel="noopener" target="_blank"><span <span="" class="icon-wrap"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 17.5c4.7 2.4 13 2.6 18-.5.8-.4 1.6.6.9 1.2-5.8 5-16.2 4.8-20.6 1.6-.7-.6.1-1.8.9-1.3zM6 9.5C6 7.6 7.6 6 9.5 6S13 7.6 13 9.5V16h-2v-6.5A1.5 1.5 0 009.5 8 1.5 1.5 0 008 9.5V16H6V9.5zm10-1h2V16h-2V8.5z" fill="currentColor"></path></svg></span><span>Amazon Music</span></a>
-<a aria-label="Instagram" class="pill link-inst" href="https://www.instagram.com/carlesv_music/" rel="noopener" target="_blank"><span <span="" class="icon-wrap"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm0 2a3 3 0 00-3 3v10a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H7zm5 3.5A5.5 5.5 0 1111.99 20 5.5 5.5 0 0112 7.5zm0 2A3.5 3.5 0 1015.5 13 3.5 3.5 0 0012 9.5zM18 6.2a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" fill="currentColor"></path></svg></span><span>Instagram</span></a>
-<a aria-label="X" class="pill link-x" href="https://x.com/carlesv_music?s=21&amp;t=g0ItsxEC83VRl7yHCkt21w" rel="noopener" target="_blank"><span <span="" class="icon-wrap"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 3l7.2 9.1L4 21h2.3l6-7.4 4.8 7.4H20l-7-10.4L19.6 3H17.3l-5.6 6.9L7.4 3H4z" fill="currentColor"></path></svg></span><span>X</span></a>
-<a aria-label="TikTok" class="pill link-tt" href="https://www.tiktok.com/@carlesv_music" rel="noopener" target="_blank"><span <span="" class="icon-wrap"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M15.5 3h2c.2 2 1.6 3.8 3.5 4.4v2.1c-1.5 0-3-.5-4.3-1.3v6.7a6 6 0 11-6-6c.3 0 .6 0 .8.1v2.3a3.7 3.7 0 00-.8-.1 3.7 3.7 0 103.7 3.7V3z" fill="currentColor"></path></svg></span><span>TikTok</span></a>
+<a aria-label="Spotify" class="pill link-spotify" href="https://open.spotify.com/album/2cm21lv2DqIP2DlC1qum8n?si=lGYHSq8FTi2cii3vWtsRPw" rel="noopener" target="_blank"><span class="icon-wrap"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm4.48 14.55a.8.8 0 01-1.1.27c-3.02-1.84-6.82-2.26-11.28-1.25a.8.8 0 11-.35-1.56c4.86-1.11 9.1-.64 12.49 1.42.38.23.5.73.24 1.12zm1.57-3.08a1 1 0 01-1.37.34c-3.46-2.11-8.73-2.72-12.82-1.51a1 1 0 11-.58-1.92c4.51-1.36 10.26-.69 14.17 1.68a1 1 0 01.6 1.41zm.13-3.32c-3.99-2.37-10.63-2.59-14.46-1.44a1.2 1.2 0 01-.68-2.3c4.44-1.33 11.83-1.07 16.46 1.68a1.2 1.2 0 01-1.32 2.06z" fill="currentColor"></path></svg></span><span>Spotify</span></a>
+<a aria-label="Apple Music" class="pill link-apple" href="https://music.apple.com/es/artist/carles-v/1817843157" rel="noopener" target="_blank"><span class="icon-wrap"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M16.5 3.1l-8 2V16a2.8 2.8 0 11-1.7-2.6V7.8l9.7-2.3v8.8A2.8 2.8 0 1115 11.7V3.1z" fill="currentColor"></path></svg></span><span>Apple Music</span></a>
+<a aria-label="YouTube Music" class="pill link-ytm" href="https://music.youtube.com/playlist?list=OLAK5uy_m9PAokegAQka0ocol_H6LfxYlsUZ3oQmo" rel="noopener" target="_blank"><span class="icon-wrap"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="currentColor"><circle cx="12" cy="12" r="10"></circle><path d="M10 15.5v-7l6 3.5-6 3.5z" fill="#000"></path></g></svg></span><span>YouTube Music</span></a>
+<a aria-label="YouTube" class="pill link-youtube" href="https://www.youtube.com/@carlesvmusic" rel="noopener" target="_blank"><span class="icon-wrap"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31 31 0 000 12a31 31 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31 31 0 0024 12a31 31 0 00-.5-5.8zM9.8 15.6V8.4l6.2 3.6-6.2 3.6z" fill="currentColor"></path></svg></span><span>YouTube</span></a>
+<a aria-label="Bandcamp" class="pill link-bandcamp" href="https://carlesv.bandcamp.com/" rel="noopener" target="_blank"><span class="icon-wrap"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7.2 5L1 19h9.8L18 5H7.2z" fill="currentColor"></path></svg></span><span>Bandcamp</span></a>
+<a aria-label="Amazon Music" class="pill link-amazon" href="https://music.amazon.es/artists/B0FB9LYZL2/carles-v" rel="noopener" target="_blank"><span class="icon-wrap"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 17.5c4.7 2.4 13 2.6 18-.5.8-.4 1.6.6.9 1.2-5.8 5-16.2 4.8-20.6 1.6-.7-.6.1-1.8.9-1.3zM6 9.5C6 7.6 7.6 6 9.5 6S13 7.6 13 9.5V16h-2v-6.5A1.5 1.5 0 009.5 8 1.5 1.5 0 008 9.5V16H6V9.5zm10-1h2V16h-2V8.5z" fill="currentColor"></path></svg></span><span>Amazon Music</span></a>
+<a aria-label="Instagram" class="pill link-inst" href="https://www.instagram.com/carlesv_music/" rel="noopener" target="_blank"><span class="icon-wrap"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm0 2a3 3 0 00-3 3v10a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H7zm5 3.5A5.5 5.5 0 1111.99 20 5.5 5.5 0 0112 7.5zm0 2A3.5 3.5 0 1015.5 13 3.5 3.5 0 0012 9.5zM18 6.2a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" fill="currentColor"></path></svg></span><span>Instagram</span></a>
+<a aria-label="X" class="pill link-x" href="https://x.com/carlesv_music?s=21&t=g0ItsxEC83VRl7yHCkt21w" rel="noopener" target="_blank"><span class="icon-wrap"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 3l7.2 9.1L4 21h2.3l6-7.4 4.8 7.4H20l-7-10.4L19.6 3H17.3l-5.6 6.9L7.4 3H4z" fill="currentColor"></path></svg></span><span>X</span></a>
+<a aria-label="TikTok" class="pill link-tt" href="https://www.tiktok.com/@carlesv_music" rel="noopener" target="_blank"><span class="icon-wrap"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M15.5 3h2c.2 2 1.6 3.8 3.5 4.4v2.1c-1.5 0-3-.5-4.3-1.3v6.7a6 6 0 11-6-6c.3 0 .6 0 .8.1v2.3a3.7 3.7 0 00-.8-.1 3.7 3.7 0 103.7 3.7V3z" fill="currentColor"></path></svg></span><span>TikTok</span></a>
 <a aria-label="Push.fm" class="pill" href="https://push.fm/fl/7pvnx4i9" rel="noopener" target="_blank"><span>Push.fm</span></a>
 </nav>
 </section>
+
+
+  
+<section class="about-wrap">
+  <div class="about-content">
+    <p>Sóc en <strong>Carles V.</strong> i faig música digital i independent. El meu primer àlbum llarg és <em>Dins l’univers</em> (2025): 10 cançons sobre records, família i camins que giren al revés.</p>
+
+    <p>Sóc <strong>enginyer químic</strong>, amb <strong>estudis superiors en astrofísica</strong>, i apassionat per la tecnologia, la ciència i la música. No em considero músic ni creador professional. Aquest projecte no neix amb cap objectiu econòmic: és una manera d’expressar emocions i històries personals a través de la tecnologia.</p>
+
+    <p>Gràcies a les eines actuals —com la <strong>intel·ligència artificial</strong> i altres processos digitals— he pogut donar forma a melodies i sons que abans només imaginava.</p>
+
+    <p>Les lletres són totes meves, nascudes de vivències reals i moments íntims. <strong>Les canto inicialment amb la meva veu real</strong>, amb la melodia que tinc al cap quan escric. A partir d’aquests enregistraments es crea un <strong>model de veu digital personalitzat</strong> mitjançant tecnologia d’IA.</p>
+
+    <p>Aquest model tradueix la idea vocal en una estructura musical: la IA interpreta la melodia i després puc afinar-la, ajustar tons i canviar acords —posar-hi un <em>la</em>, un <em>fa menor</em>— i escollir els instruments que imagino per a cada peça. El resultat és una fusió entre la meva veu original, la intuïció artística i les possibilitats tècniques actuals.</p>
+
+    <p>El procés creatiu no és totalment controlable. Les eines digitals evolucionen molt ràpid i, cada mes, obren camins que abans semblaven impensables. Treballar-hi és experimentar i aprendre constantment: hi ha encerts, errors i sorpreses —sempre amb una intenció clara darrere de cada pas.</p>
+
+    <h2>El projecte vol contribuir a:</h2>
+    <ul class="about-values">
+      <li><strong>Promoure la cultura catalana</strong>, donant veu a llocs reals del territori —espais naturals, pobles petits i racons amb història— a través de la música.</li>
+      <li><strong>Divulgar l’astronomia i la ciència</strong>, convertint algunes cançons en eines didàctiques que apropen el cosmos al públic.</li>
+      <li><strong>Compartir coneixement</strong>, oferint arxius <em>MIDI</em> gratuïts per a músics i cantants.</li>
+      <li><strong>Mantenir viva la sensibilitat artística</strong>, combinant emoció i tecnologia amb respecte i autenticitat.</li>
+    </ul>
+
+    <p>En aquesta <a href="https://open.spotify.com/episode/42w4jIk8JCeOASK4dYb8qW?si=99LfaHnTTbeq4xbbiLdJHQ" target="_blank" rel="noopener">entrevista a Ràdio Voltregà</a> explico amb més detall el procés creatiu i el camí de cada cançó.</p>
+  </div>
 </section>
+
 </main>
+
 <footer><div class="container small">© 2025 Carles V — Projecte musical independent. · Distribuït per DistroKid</div></footer>
-<script src="assets/js/main.js"></script>
-<!-- visit-tracker (GAS) start -->
-<script>
-(function(){
-  try{
-    if (window.__vt_sent__) return; window.__vt_sent__=true;
-    var d = new URLSearchParams();
-    d.append('path', location.pathname + location.search);
-    d.append('referrer', document.referrer || '');
-    var p = new URLSearchParams(location.search);
-    ['utm_source','utm_medium','utm_campaign','utm_term','utm_content'].forEach(function(k){
-      var v=p.get(k); if(v) d.append(k,v);
-    });
-    var ENDPOINT = 'https://script.google.com/macros/s/AKfycbyV8__2J-ASXvE3tYjDB6gvxtO8TCZfk8FV0pH7JzEZOBFoUMUS0_5jy-mGw3kyVZP6/exec'; // TODO: reemplaza por tu URL de Apps Script que termina en /exec
-    if(navigator.sendBeacon){
-      var b=new Blob([d.toString()],{type:'application/x-www-form-urlencoded'});
-      navigator.sendBeacon(ENDPOINT,b);
-    } else {
-      fetch(ENDPOINT,{method:'POST',body:d,keepalive:true,headers:{'Content-Type':'application/x-www-form-urlencoded'}});
-    }
-  }catch(_{}){}
-})();
-</script>
-<!-- visit-tracker (GAS) end -->
-<!-- visible-visit-counter (JSONP) start -->
-<style>
-  .cv-counter-badge{
-    position:fixed; right:16px; bottom:16px; z-index:9999;
-    background:rgba(255,255,255,.92); backdrop-filter:saturate(180%) blur(8px);
-    border:1px solid rgba(0,0,0,.08); border-radius:999px; padding:6px 12px;
-    font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
-    font-size:12px; color:#374151; box-shadow:0 2px 10px rgba(0,0,0,.08);
-  }
-  @media (max-width: 640px){ .cv-counter-badge{ font-size:11px; right:12px; bottom:12px; } }
-</style>
-<div aria-live="polite" class="cv-counter-badge" id="cvCounter" title="Visites totals">Visites: —</div>
-<script>
-(function(){
-  // Define endpoint locally
-  var ENDPOINT = "https://script.google.com/macros/s/AKfycbyV8__2J-ASXvE3tYjDB6gvxtO8TCZfk8FV0pH7JzEZOBFoUMUS0_5jy-mGw3kyVZP6/exec";
-  // 10-minute throttle; ?force=1 overrides
-  try {
-    var KEY = 'cv_last_hit_ts';
-    var now = Date.now();
-    var last = parseInt(localStorage.getItem(KEY) || '0', 10);
-    var TEN_MIN = 10 * 60 * 1000;
-    var qs = location.search ? location.search.substring(1) : '';
-    var params = new URLSearchParams(qs);
-    var force = (params.has('force') && params.get('force') !== '0');
-    var shouldSend = force || (!last || (now - last) > TEN_MIN);
-
-    if (shouldSend) {
-      if (force) console.log('[cv] forcing hit (ignore 10min throttle)');
-      localStorage.setItem(KEY, String(now));
-      var p = new URLSearchParams();
-      p.append('hit','1');
-      p.append('path', location.pathname + location.search);
-      p.append('referrer', document.referrer || '');
-      var utms = ['utm_source','utm_medium','utm_campaign','utm_term','utm_content'];
-      for (var i=0;i<utms.length;i++) {
-        var k = utms[i];
-        var v = params.get(k);
-        if (v) p.append(k, v);
-      }
-      var img = new Image(1,1);
-      img.referrerPolicy = 'no-referrer-when-downgrade';
-      var url = ENDPOINT + '?' + p.toString() + '&ts=' + Date.now();
-      console.log('[cv] sending hit:', url);
-      img.src = url;
-    } else {
-      console.log('[cv] throttled (10min window). Last:', last, 'Now:', now);
-    }
-  } catch(e) { console.warn('[cv] error sending hit', e); }
-
-  // Read total via JSONP with cache-buster
-  try {
-    var cb = 'CV_CB_' + Math.random().toString().slice(2);
-    window[cb] = function(data){
-      try {
-        var t = (data && typeof data.total !== 'undefined') ? data.total : null;
-        if (t !== null) document.getElementById('cvCounter').textContent = 'Visites: ' + (t.toLocaleString ? t.toLocaleString() : t);
-      } catch(_e){}
-      try { delete window[cb]; } catch(_d){}
-    };
-    var s = document.createElement('script');
-    s.src = ENDPOINT + '?summary=1&callback=' + cb + '&ts=' + Date.now();
-    document.head.appendChild(s);
-  } catch(e) { console.warn('[cv] error loading total', e); }
-})();
-</script>
-<!-- visible-visit-counter (JSONP) end -->
 </body>
 </html>
