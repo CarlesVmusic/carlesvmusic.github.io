@@ -33,7 +33,43 @@
 <meta content="dark light" name="color-scheme"/>
 <meta content="Carles V — Dins l’univers (2025). Projecte musical independent, sense discogràfica ni concerts. Web oficial." name="description"/>
 <meta content="Carles V" name="author"/>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Carles V", "alternateName": "Carles Vives", "url": "https://www.carlesvives.cat/", "image": "https://www.carlesvives.cat/assets/img/og-image.jpg", "jobTitle": "Músic independent", "homeLocation": {"@type": "Place", "address": {"@type": "PostalAddress", "addressRegion": "Catalunya", "addressCountry": "ES"}}, "sameAs": ["https://carlesvives.bandcamp.com/", "https://x.com/carlesv_music?s=21&t=g0ItsxEC83VRl7yHCkt21w", "https://open.spotify.com/intl-es/artist/52qImPTQgKRWEMkkcunfgp?si=qqcZwaEJSsWvGdoYyjtpcw", "https://music.apple.com/es/artist/carles-v/1817843157", "https://music.youtube.com/playlist?list=OLAK5uy_m9PAokegAQka0ocol_H6LfxYlsUZ3oQmo", "https://www.youtube.com/@carlesvmusic", "https://www.instagram.com/carlesv_music/"]}</script></head>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Carles V", "alternateName": "Carles Vives", "url": "https://www.carlesvives.cat/", "image": "https://www.carlesvives.cat/assets/img/og-image.jpg", "jobTitle": "Músic independent", "homeLocation": {"@type": "Place", "address": {"@type": "PostalAddress", "addressRegion": "Catalunya", "addressCountry": "ES"}}, "sameAs": ["https://carlesvives.bandcamp.com/", "https://x.com/carlesv_music?s=21&t=g0ItsxEC83VRl7yHCkt21w", "https://open.spotify.com/intl-es/artist/52qImPTQgKRWEMkkcunfgp?si=qqcZwaEJSsWvGdoYyjtpcw", "https://music.apple.com/es/artist/carles-v/1817843157", "https://music.youtube.com/playlist?list=OLAK5uy_m9PAokegAQka0ocol_H6LfxYlsUZ3oQmo", "https://www.youtube.com/@carlesvmusic", "https://www.instagram.com/carlesv_music/"]}</script>
+<style>
+
+/* --- Banner "Encén la nit" --- */
+.banner{margin:16px 0 8px;padding:14px 0;border-top:1px solid #1a2233;border-bottom:1px solid #1a2233;background:linear-gradient(180deg, rgba(10,23,36,.25), rgba(10,23,36,.1))}
+.banner .container{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+.banner strong{font-weight:700;letter-spacing:.2px}
+.banner-actions{margin-left:auto;display:flex;gap:10px;flex-wrap:wrap}
+.btn.small{padding:8px 12px;font-size:.92rem;border-radius:10px}
+.btn.ghost{background:transparent;border:1px solid #1a2233;color:#e6e8ef}
+@media (max-width:720px){.banner .container{flex-direction:column;align-items:flex-start}.banner-actions{margin-left:0}}
+
+</style>
+
+<style>
+:root{
+  --bg:#070a12;
+  --fg:#e8ecf5;
+  --muted:#b7c0cf;
+  --accent:#a8d2ff;
+  --accent-2:#ffd9ff;
+  --card:#0b1020;
+  --border:#1a2438;
+}
+body{
+  background:
+    radial-gradient(1100px 700px at 15% 12%, rgba(168,210,255,.12), transparent 60%),
+    radial-gradient(800px 600px at 80% 18%, rgba(255,217,255,.10), transparent 60%),
+    var(--bg);
+  color:var(--fg);
+}
+.btn{background:var(--accent);color:#06131f;border:1px solid transparent}
+.btn.ghost{background:transparent;border-color:var(--border);color:var(--fg)}
+.banner{background:linear-gradient(180deg, rgba(12,20,36,.28), rgba(12,20,36,.12))}
+</style>
+
+</head>
 <body>
 <header class="header">
 <nav aria-label="Navegació primària" class="nav container">
@@ -47,6 +83,19 @@
 </div>
 </nav>
 </header>
+
+<!-- ANUNCI: Single nou "Encén la nit" -->
+<section id="encen-banner" class="banner" aria-live="polite">
+  <div class="container">
+    <strong>Encén la nit</strong> — estrena 29·11·2025
+    <div class="banner-actions">
+      <a class="btn small" href="https://distrokid.com/hyperfollow/carlesv/encn-la-nit" target="_blank" rel="noopener">Pre-save a Spotify</a>
+      <a class="btn ghost small" href="musica/encen-la-nit/">Detalls de la cançó</a>
+      <a class="btn ghost small" href="https://youtu.be/19PLFUqqtYM" target="_blank" rel="noopener">Vídeo a YouTube</a>
+    </div>
+  </div>
+</section>
+
 <main class="container">
 <section class="hero">
 <div class="container hero-grid">
@@ -208,5 +257,21 @@
 </script>
 <!-- visible-visit-counter (JSONP) end -->
 <script src="assets/js/comments.js"></script>
+
+<script>
+
+(function(){
+  var release = new Date('2025-11-29T00:00:00+01:00'); // Europe/Madrid
+  if (new Date() >= release){
+    var b = document.getElementById('encen-banner');
+    if (!b) return;
+    var btns = b.querySelectorAll('a');
+    // [0] Pre-save → Spotify (posa l'URL definitiva quan la tinguis)
+    btns[0].textContent = 'Escolta a Spotify';
+    btns[0].setAttribute('href',''); // ← URL Spotify
+  }
+})();
+
+</script>
 </body>
 </html>

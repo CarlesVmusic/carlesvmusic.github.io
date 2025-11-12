@@ -1,0 +1,7 @@
+.banner{margin:16px 0 8px;padding:14px 0;border-top:1px solid #1a2233;border-bottom:1px solid #1a2233;background:linear-gradient(180deg, rgba(10,23,36,.25), rgba(10,23,36,.1))}
+.banner .container{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+.banner strong{font-weight:700;letter-spacing:.2px}
+.banner-actions{margin-left:auto;display:flex;gap:10px;flex-wrap:wrap}
+.btn.small{padding:8px 12px;font-size:.92rem;border-radius:10px}
+.btn.ghost{background:transparent;border:1px solid #1a2233;color:#e6e8ef}
+@media (max-width:720px){.banner .container{flex-direction:column;align-items:flex-start}.banner-actions{margin-left:0}}

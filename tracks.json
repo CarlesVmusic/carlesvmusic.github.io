@@ -1,0 +1,23 @@
+[
+  {
+    "slug": "encen-la-nit",
+    "title": "Encén la nit",
+    "artist": "Carles V",
+    "release_date": "2025-11-29",
+    "duration": "PT4M16S",
+    "isrc": "QT6ET2537401",
+    "upc": "199955796455",
+    "cover": "/musica/encen-la-nit/assets/cover.jpeg",
+    "url": "/musica/encen-la-nit/",
+    "platforms": {
+      "spotify_presave": "https://distrokid.com/hyperfollow/carlesv/encn-la-nit",
+      "youtube": "https://youtu.be/19PLFUqqtYM",
+      "instagram_reel": "https://www.instagram.com/reel/DQ41pi3CK3_/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+    },
+    "tags": [
+      "Single",
+      "Nadal",
+      "Pop emotiu"
+    ]
+  }
+]
