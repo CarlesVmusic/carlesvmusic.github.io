@@ -28,9 +28,16 @@ S’ha retirat el comptador flotant visible i es conserva el registre de visites
 COMPROVACIONS
 Enllaços locals i recursos: sense referències trencades.
 Sintaxi JavaScript: correcta.
-Navegador Chromium: revisió a 1440, 820, 390 i 320 píxels; sense desbordament horitzontal a les 20 pàgines de contingut. Menú mòbil comprovat.
+Navegador Chromium: revisió a 1440, 820, 390 i 320 píxels; sense desbordament horitzontal a les 21 pàgines de contingut. Menú mòbil comprovat.
 Enllaços externs: destinacions accessibles en la comprovació; corregit el de Bandcamp de Gira al revés. Una resposta HTTP correcta no confirma tota la reproducció audiovisual ni l’accés en totes les regions.
 YouTube Music ha retornat 429 (límit de consultes); es conserva el canal oficial facilitat anteriorment. Instagram respon, però no s’ha pogut comprovar automàticament la reproducció dels reels.
 Els vídeos s’obren amb enllaços directes per evitar reproductors externs buits o bloquejats.
 El correu és l’adreça que ja utilitzava la web: carlesvmusic@gmail.com.
 No s’ha publicat automàticament ni s’ha modificat el repositori remot.
+
+AMPLIACIÓ: RÀDIO, PREMSA I PLATAFORMES
+Nova pàgina premsa.html al menú de tota la web: presentació breu, procés creatiu, entrevista a Ràdio Voltregà, contacte i dos singles recents.
+Sis singles amb selector Spotify / Apple Music / YouTube Music. Spotify i Apple Music disposen de reproductors integrats i enllaços directes a la publicació. YouTube Music obre el canal oficial, indicat clarament; no s’han inventat enllaços individuals a les cançons.
+També hi ha accés a les tres plataformes des de les targetes de portada i discografia. A les pistes de l’àlbum, Spotify obre la pista; Apple Music obre el perfil d’artista i YouTube Music el canal, amb etiquetes explícites.
+Els dotze endpoints dels reproductors de Spotify i Apple Music han respost HTTP 200. La reproducció completa depèn de cada plataforma i de la sessió de l’oient; no s’ha validat reproducció autenticada. La prova local de disposició bloqueja expressament els recursos externs; comprova la disposició i els selectors, no la reproducció.
+Aquest ZIP incorpora totes les millores anteriors. Fes servir aquesta última versió, no cal pujar primer les anteriors.

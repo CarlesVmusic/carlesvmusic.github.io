@@ -9,7 +9,8 @@
     "url": "/musica/encara-hi-ets/",
     "platforms": {
       "apple_music": "https://music.apple.com/us/album/encara-hi-ets-single/6815860780",
-      "spotify": "https://open.spotify.com/album/3BgnOGpuHJYF7HZ3yjM0Y9?utm_source=openai&utm_medium=chatgpt&request_id=2203228a-8bb6-4675-8ca9-262a90646221"
+      "spotify": "https://open.spotify.com/album/3BgnOGpuHJYF7HZ3yjM0Y9?utm_source=openai&utm_medium=chatgpt&request_id=2203228a-8bb6-4675-8ca9-262a90646221",
+      "youtube_music_channel": "https://music.youtube.com/channel/UCJD_y2-raSl54ciRZfUPKNA?si=4APVLroM_Z2D17_4"
     }
   },
   {
@@ -22,7 +23,8 @@
     "url": "/musica/fora-de-cobertura/",
     "platforms": {
       "apple_music": "https://music.apple.com/us/album/fora-de-cobertura-single/6815955636",
-      "spotify": "https://open.spotify.com/album/2ab9MQd9KsYDmhAc6ybDY1?utm_source=openai&utm_medium=chatgpt&request_id=a3e03a3f-c4b2-4895-bad4-ea7af7c43b3b"
+      "spotify": "https://open.spotify.com/album/2ab9MQd9KsYDmhAc6ybDY1?utm_source=openai&utm_medium=chatgpt&request_id=a3e03a3f-c4b2-4895-bad4-ea7af7c43b3b",
+      "youtube_music_channel": "https://music.youtube.com/channel/UCJD_y2-raSl54ciRZfUPKNA?si=4APVLroM_Z2D17_4"
     }
   },
   {
@@ -35,7 +37,8 @@
     "url": "/musica/mhe-triat-a-mi/",
     "platforms": {
       "apple_music": "https://music.apple.com/us/album/mhe-triat-a-mi-single/1890060821",
-      "spotify": "https://open.spotify.com/album/6OVAEw60C8o8QWTZP6aAFD?utm_source=openai&utm_medium=chatgpt&request_id=2203228a-8bb6-4675-8ca9-262a90646221"
+      "spotify": "https://open.spotify.com/album/6OVAEw60C8o8QWTZP6aAFD?utm_source=openai&utm_medium=chatgpt&request_id=2203228a-8bb6-4675-8ca9-262a90646221",
+      "youtube_music_channel": "https://music.youtube.com/channel/UCJD_y2-raSl54ciRZfUPKNA?si=4APVLroM_Z2D17_4"
     }
   },
   {
@@ -48,7 +51,8 @@
     "url": "/musica/torna-a-mirar/",
     "platforms": {
       "apple_music": "https://music.apple.com/us/album/torna-a-mirar-single/1865496899",
-      "spotify": "https://open.spotify.com/album/5nE0FdVuHxVoNRKOyqVLom?utm_source=openai&utm_medium=chatgpt&request_id=db74b48c-aa5b-41d8-8649-d0226f200b09"
+      "spotify": "https://open.spotify.com/album/5nE0FdVuHxVoNRKOyqVLom?utm_source=openai&utm_medium=chatgpt&request_id=db74b48c-aa5b-41d8-8649-d0226f200b09",
+      "youtube_music_channel": "https://music.youtube.com/channel/UCJD_y2-raSl54ciRZfUPKNA?si=4APVLroM_Z2D17_4"
     }
   },
   {
@@ -62,7 +66,8 @@
     "platforms": {
       "apple_music": "https://music.apple.com/us/album/light-up-the-night-single/1853345478",
       "listen": "https://push.fm/fl/z7dbvxjb",
-      "spotify": "https://open.spotify.com/album/20jSVRl57d3agJKVTDK1P2?utm_source=openai&utm_medium=chatgpt&request_id=2203228a-8bb6-4675-8ca9-262a90646221"
+      "spotify": "https://open.spotify.com/album/20jSVRl57d3agJKVTDK1P2?utm_source=openai&utm_medium=chatgpt&request_id=2203228a-8bb6-4675-8ca9-262a90646221",
+      "youtube_music_channel": "https://music.youtube.com/channel/UCJD_y2-raSl54ciRZfUPKNA?si=4APVLroM_Z2D17_4"
     }
   },
   {
@@ -77,7 +82,8 @@
       "apple_music": "https://music.apple.com/us/album/encen-la-nit-single/1852708535",
       "listen": "https://push.fm/fl/rowe1uy3",
       "youtube": "https://youtu.be/19PLFUqqtYM",
-      "spotify": "https://open.spotify.com/album/0T85VX0bbyXXJs84hmZ90B?utm_source=openai&utm_medium=chatgpt&request_id=2203228a-8bb6-4675-8ca9-262a90646221"
+      "spotify": "https://open.spotify.com/album/0T85VX0bbyXXJs84hmZ90B?utm_source=openai&utm_medium=chatgpt&request_id=2203228a-8bb6-4675-8ca9-262a90646221",
+      "youtube_music_channel": "https://music.youtube.com/channel/UCJD_y2-raSl54ciRZfUPKNA?si=4APVLroM_Z2D17_4"
     },
     "isrc": "QT6ET2537401",
     "upc": "199955796455"
