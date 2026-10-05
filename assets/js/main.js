@@ -1,14 +1,8 @@
+document.documentElement.classList.add('js');
+const toggle=document.querySelector('.menu-toggle');
+const nav=document.getElementById('main-nav');
+if(toggle&&nav){toggle.addEventListener('click',()=>{const open=toggle.getAttribute('aria-expanded')!=='true';toggle.setAttribute('aria-expanded',String(open));nav.classList.toggle('is-open',open)});document.addEventListener('keydown',e=>{if(e.key==='Escape'){toggle.setAttribute('aria-expanded','false');nav.classList.remove('is-open')}})}
+const form=document.getElementById('contactForm');
+if(form){form.addEventListener('submit',e=>{e.preventDefault();const value=id=>document.getElementById(id).value.trim();const body=`Nom: ${value('name')}\nCorreu: ${value('email')}\n\n${value('message')}`;window.location.href=`mailto:carlesvmusic@gmail.com?subject=${encodeURIComponent(value('subject'))}&body=${encodeURIComponent(body)}`;document.getElementById('form-status').textContent='El correu està preparat. Envia’l des de la teva aplicació de correu; si no s’obre, utilitza l’adreça de contacte.'})}
 
-// JS mínim — marca nav actiu i toggles
-document.addEventListener('click', (e)=>{
-  const t = e.target.closest('[data-toggle="reveal"]');
-  if(!t) return;
-  const expanded = t.getAttribute('aria-expanded') === 'true';
-  t.setAttribute('aria-expanded', String(!expanded));
-});
-(function(){
-  const here = location.pathname.split('/').pop() || 'index.html';
-  document.querySelectorAll('nav a').forEach(a=>{
-    if(a.getAttribute('href')===here) a.classList.add('active');
-  });
-})();
+(function(){try{const key='cv_last_hit_ts',now=Date.now(),last=Number(localStorage.getItem(key)||0);if(now-last<600000)return;localStorage.setItem(key,String(now));const d=new URLSearchParams({path:location.pathname+location.search,referrer:document.referrer||''});const q=new URLSearchParams(location.search);['utm_source','utm_medium','utm_campaign','utm_term','utm_content'].forEach(k=>{if(q.get(k))d.set(k,q.get(k))});const endpoint='https://script.google.com/macros/s/AKfycbyV8__2J-ASXvE3tYjDB6gvxtO8TCZfk8FV0pH7JzEZOBFoUMUS0_5jy-mGw3kyVZP6/exec';if(navigator.sendBeacon)navigator.sendBeacon(endpoint,new Blob([d.toString()],{type:'application/x-www-form-urlencoded'}));else fetch(endpoint,{method:'POST',body:d,keepalive:true}).catch(()=>{});}catch(_){}})();

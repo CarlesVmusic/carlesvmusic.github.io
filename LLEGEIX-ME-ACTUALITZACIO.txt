@@ -1,36 +1,36 @@
-CARLESVIVES.CAT — ACTUALITZACIÓ 05/10/2026
+CARLES V — WEB RENOVADA · 5 D’OCTUBRE DE 2026
 
-COM APLICAR-LA
-1. Descomprimeix aquest ZIP.
-2. Copia TOT el contingut a la mateixa carpeta on ja tens index.html.
-3. Quan et pregunti, substitueix els fitxers i combina les carpetes.
-4. Publica els fitxers com ho fas habitualment.
+COM POSAR-LA A LA WEB ACTUAL
+1. Guarda una còpia de la web actual (o descarrega el repositori com a ZIP).
+2. Extreu tracks.zip al teu ordinador.
+3. Puja el CONTINGUT extret a l’arrel del repositori CarlesVmusic/carlesvmusic.github.io. No pugis el ZIP ni una carpeta que l’embolcalli.
+4. Substitueix els fitxers del mateix nom. Inclou les carpetes assets, tracks i musica amb el seu contingut.
+5. Conserva el fitxer CNAME actual, el domini personalitzat i la configuració de GitHub Pages. Aquest ZIP no modifica aquests elements.
+6. Desa els canvis i espera que GitHub Pages acabi de publicar. Després actualitza el navegador sense memòria cau.
 
-El ZIP té els fitxers a l’arrel: index.html, musica.html, assets, tracks, musica... No cal crear una carpeta nova ni instal·lar res.
-No has d’esborrar fitxers manualment. L’antic futurs-projectes.html ara redirigeix al catàleg, també quan s’aplica damunt de la versió anterior.
+NO CAL ESBORRAR PRIMER LA WEB
+No eliminis el repositori, el CNAME ni la configuració de Pages. Els fitxers nous substitueixen els antics. musica.html i futurs-projectes.html redirigeixen a disc.html perquè les adreces antigues continuïn tenint sentit. Els recursos antics que ja no es mostren poden quedar al repositori; no cal fer una neteja manual per publicar aquesta versió.
 
-CANVIS
-- Conservat el tema visual i les pàgines del disc.
-- Nova portada amb Encara hi ets i Fora de cobertura.
-- Catàleg amb els sis singles publicats, portades oficials i fitxes.
-- Spotify i Apple Music amb enllaços directes als singles.
-- Spotify amb enllaços directes a cadascuna de les deu cançons del disc.
-- Actualitzat l’enllaç Spotify de Dins l’univers.
-- Encén la nit ja figura com a publicada; corregit el botó buit que generava l’antic script.
-- Conservats la lletra d’Encén la nit, el fragment de ràdio, les històries del disc i el formulari de contacte.
-- Sobre mi: procés creatiu explicat segons les precisions de Carles. Melodies imaginades, treball de lletres, direcció creativa, IA i participació ocasional de família i seguidors. No es presenta tocar instruments com una pràctica habitual.
-- Futurs projectes retirat del menú.
-- Corregides rutes de recursos, marcatge i errors de sintaxi JavaScript.
-- Actualitzat el mapa de pàgines.
+QUÈ HA CANVIAT
+Portada nova amb els dos singles recents, els quatre anteriors i l’àlbum.
+Discografia única: sis singles i àlbum separat amb les deu pistes.
+Totes les pàgines de cançons amb el mateix disseny, escolta directa i navegació.
+Sobre mi reorganitzat, amb el procés de creació amb IA, melodies imaginades, escriptura, revisió, independència i opinions compartides.
+Retirada la imatge d’un guitarrista de Sobre mi.
+Contacte reorganitzat: el formulari prepara un correu a l’aplicació de l’usuari, no envia des d’un servidor.
+Quatre reels d’Instagram facilitats per Carles.
+Nou menú mòbil, tipografia, espais i formats per a mòbil, tauleta i ordinador.
+Lletres incorporades dels documents de nou cançons de l’àlbum. Les notes de treball i resums personals no es barregen amb les lletres. La nota de «s’esvira» es conserva a part.
+«Tu ets mare — Estesa» no s’ha atribuït a la versió Remastered sense confirmar-ne l’equivalència.
+Es conserven les adreces de totes les cançons. No es mostren futurs projectes.
+S’ha retirat el comptador flotant visible i es conserva el registre de visites amb l’endpoint anterior, sense duplicar enviaments.
 
-CRITERIS I COMPROVACIONS
-Portades, durades i dates dels singles contrastades amb Apple Music. Spotify: singles i àlbum disponibles amb la identitat de l’artista Carles V.
-M’he triat a mi figura amb data 22/04/2026 a Apple Music; s’ha utilitzat aquesta data publicada.
-Les lletres noves i els ISRC/UPC no acreditats no s’han inventat ni incorporat.
-Totes les referències locals de les pàgines resolen a fitxers existents. Sintaxi JavaScript comprovada.
-Bandcamp, Apple, Spotify, Amazon, Instagram, TikTok, Push de l’àlbum i els enllaços YouTube revisats per resposta HTTP. Un 200 de YouTube o d’una xarxa social no garanteix la reproducció o la disponibilitat sense iniciar sessió.
-YouTube Music: substituïda l’antiga playlist d’A foc lent pel canal oficial facilitat anteriorment per Carles. La comprovació actual del canal ha retornat una limitació de peticions (429), de manera que no es pot garantir la càrrega des d’aquest entorn.
-X: retirat de les barres visibles perquè l’enllaç antic retornava 404.
-La comprovació visual en navegador de la còpia local no s’ha pogut completar per restriccions de l’entorn. Es conserven els estils originals i s’hi afegeixen regles per adaptar el catàleg a pantalles petites.
-
-Aquesta còpia no s’ha publicat automàticament a carlesvives.cat.
+COMPROVACIONS
+Enllaços locals i recursos: sense referències trencades.
+Sintaxi JavaScript: correcta.
+Navegador Chromium: revisió a 1440, 820, 390 i 320 píxels; sense desbordament horitzontal a les 20 pàgines de contingut. Menú mòbil comprovat.
+Enllaços externs: destinacions accessibles en la comprovació; corregit el de Bandcamp de Gira al revés. Una resposta HTTP correcta no confirma tota la reproducció audiovisual ni l’accés en totes les regions.
+YouTube Music ha retornat 429 (límit de consultes); es conserva el canal oficial facilitat anteriorment. Instagram respon, però no s’ha pogut comprovar automàticament la reproducció dels reels.
+Els vídeos s’obren amb enllaços directes per evitar reproductors externs buits o bloquejats.
+El correu és l’adreça que ja utilitzava la web: carlesvmusic@gmail.com.
+No s’ha publicat automàticament ni s’ha modificat el repositori remot.
