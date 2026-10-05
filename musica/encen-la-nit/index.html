@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ca">
 <head>
 <meta charset="utf-8">
@@ -20,9 +20,6 @@
 
 <link rel="canonical" href="https://carlesvives.cat/musica/encen-la-nit/">
 <link rel="stylesheet" href="style.css">
-<link rel="preload" href="assets/cover.jpeg" as="image">
-<link rel="preload" href="assets/demos/2.mp3" as="audio" type="audio/mpeg">
-
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -70,13 +67,12 @@
     <div class="hero-text">
       <h1>Encén la nit</h1>
       <p class="subtitle">Single · 2025-11-29 · 4:16
-        <span id="soon-flag" class="badge soon" style="margin-left:8px;display:none">Estrena 29·11</span>
-      </p>
+        </p>
       <div class="cta">
-        <a class="btn" href="https://distrokid.com/hyperfollow/carlesv/encn-la-nit" aria-label="Pre-save a Spotify" target="_blank" rel="noopener">Pre-save a Spotify</a>
+        <a class="btn" href="https://open.spotify.com/album/0T85VX0bbyXXJs84hmZ90B?utm_source=openai&amp;utm_medium=chatgpt&amp;request_id=2203228a-8bb6-4675-8ca9-262a90646221" aria-label="Escolta Encén la nit a Spotify" target="_blank" rel="noopener">Escolta a Spotify</a>
         <a class="btn ghost" href="https://youtu.be/19PLFUqqtYM" aria-label="Vídeo a YouTube" target="_blank" rel="noopener">YouTube</a>
         <a class="btn ghost" href="https://www.instagram.com/reel/DQ41pi3CK3_/?utm_source=ig_web_copy_link&amp;igsh=MzRlODBiNWFlZA==" aria-label="Reel de promo a Instagram" target="_blank" rel="noopener">Reel IG</a>
-      </div>
+      <a class="btn ghost" href="https://music.apple.com/us/album/enc%C3%A9n-la-nit-single/1852708535" target="_blank" rel="noopener">Apple Music</a></div>
     </div>
   </section>
 
@@ -85,27 +81,9 @@
       <h2>Escolta</h2>
       <div class="embeds">
         <div class="embed" aria-label="YouTube player">
-          <iframe width="100%" height="315"
-            src="https://www.youtube-nocookie.com/embed/19PLFUqqtYM?rel=0"
-            title="Encén la nit — YouTube"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
+          <iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/19PLFUqqtYM?rel=0" title="Encén la nit — YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
-        <div class="embed" aria-label="Spotify player">
-          <p><strong>Spotify</strong> — disponible el 29/11. Fes <a href="https://distrokid.com/hyperfollow/carlesv/encn-la-nit" target="_blank" rel="noopener">pre-save</a>.</p>
-        </div>
-        <div class="embed" aria-label="Demo d'àudio mp3">
-          <audio controls preload="metadata" controlsList="nodownload" style="width:100%; border-radius:8px; outline:none;">
-            <source src="assets/demos/2.mp3" type="audio/mpeg">
-            <source src="assets/demos/2.MP3" type="audio/mpeg">
-            El teu navegador no suporta el reproductor d'àudio.
-          </audio>
-          <p style="opacity:.7; font-size:.9rem; margin-top:6px;">
-            Versió demo d’<strong>Encén la nit</strong> (avanç exclusiu)
-          </p>
-        </div>
-      </div>
+        <div class="embed"><p>Ja disponible a les plataformes.</p><a class="btn" href="https://open.spotify.com/album/0T85VX0bbyXXJs84hmZ90B?utm_source=openai&amp;utm_medium=chatgpt&amp;request_id=2203228a-8bb6-4675-8ca9-262a90646221" target="_blank" rel="noopener" aria-label="Escolta Encén la nit a Spotify">Escolta a Spotify</a></div></div>
     </div>
   </section>
   <!-- NOVA SECCIÓ: FRAGMENT DE RÀDIO -->
@@ -121,10 +99,10 @@
         Aquí pots escoltar el fragment exacte de l’emissió tal com es va viure en directe.
       </p>
 
-      <audio controls preload="metadata" controlsList="nodownload" style="width:100%; border-radius:8px; outline:none;">
+      <audio controls preload="metadata" controlslist="nodownload" style="width:100%; border-radius:8px; outline:none;">
         <source src="assets/demos/radio.mp3" type="audio/mpeg">
         El teu navegador no suporta el reproductor d'àudio.
-      </audio>
+      </source></audio>
 
 
     </div>
@@ -232,21 +210,8 @@ ens trobi junts, sense por ni pressa.
 </main>
 
 <footer class="site-footer">
-  <p>© 2025 Carles V · Dins l’univers.</p>
+  <p>© 2025–2026 Carles V · Dins l’univers.</p>
 </footer>
 
-<script>
-(function(){
-  var release = new Date('2025-11-29T00:00:00+01:00');
-  if(new Date() < release){
-    var f = document.getElementById('soon-flag');
-    if(f) f.style.display = 'inline-block';
-  } else {
-    // Post-estrena: Pre-save → Spotify (posa l'URL definitiva)
-    var btn = document.querySelector('.cta .btn');
-    if(btn) { btn.textContent='Escolta a Spotify'; btn.href=''; } // ← URL final Spotify
-  }
-})();
-</script>
 </body>
 </html>

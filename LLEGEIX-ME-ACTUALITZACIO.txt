@@ -1,0 +1,36 @@
+CARLESVIVES.CAT — ACTUALITZACIÓ 05/10/2026
+
+COM APLICAR-LA
+1. Descomprimeix aquest ZIP.
+2. Copia TOT el contingut a la mateixa carpeta on ja tens index.html.
+3. Quan et pregunti, substitueix els fitxers i combina les carpetes.
+4. Publica els fitxers com ho fas habitualment.
+
+El ZIP té els fitxers a l’arrel: index.html, musica.html, assets, tracks, musica... No cal crear una carpeta nova ni instal·lar res.
+No has d’esborrar fitxers manualment. L’antic futurs-projectes.html ara redirigeix al catàleg, també quan s’aplica damunt de la versió anterior.
+
+CANVIS
+- Conservat el tema visual i les pàgines del disc.
+- Nova portada amb Encara hi ets i Fora de cobertura.
+- Catàleg amb els sis singles publicats, portades oficials i fitxes.
+- Spotify i Apple Music amb enllaços directes als singles.
+- Spotify amb enllaços directes a cadascuna de les deu cançons del disc.
+- Actualitzat l’enllaç Spotify de Dins l’univers.
+- Encén la nit ja figura com a publicada; corregit el botó buit que generava l’antic script.
+- Conservats la lletra d’Encén la nit, el fragment de ràdio, les històries del disc i el formulari de contacte.
+- Sobre mi: procés creatiu explicat segons les precisions de Carles. Melodies imaginades, treball de lletres, direcció creativa, IA i participació ocasional de família i seguidors. No es presenta tocar instruments com una pràctica habitual.
+- Futurs projectes retirat del menú.
+- Corregides rutes de recursos, marcatge i errors de sintaxi JavaScript.
+- Actualitzat el mapa de pàgines.
+
+CRITERIS I COMPROVACIONS
+Portades, durades i dates dels singles contrastades amb Apple Music. Spotify: singles i àlbum disponibles amb la identitat de l’artista Carles V.
+M’he triat a mi figura amb data 22/04/2026 a Apple Music; s’ha utilitzat aquesta data publicada.
+Les lletres noves i els ISRC/UPC no acreditats no s’han inventat ni incorporat.
+Totes les referències locals de les pàgines resolen a fitxers existents. Sintaxi JavaScript comprovada.
+Bandcamp, Apple, Spotify, Amazon, Instagram, TikTok, Push de l’àlbum i els enllaços YouTube revisats per resposta HTTP. Un 200 de YouTube o d’una xarxa social no garanteix la reproducció o la disponibilitat sense iniciar sessió.
+YouTube Music: substituïda l’antiga playlist d’A foc lent pel canal oficial facilitat anteriorment per Carles. La comprovació actual del canal ha retornat una limitació de peticions (429), de manera que no es pot garantir la càrrega des d’aquest entorn.
+X: retirat de les barres visibles perquè l’enllaç antic retornava 404.
+La comprovació visual en navegador de la còpia local no s’ha pogut completar per restriccions de l’entorn. Es conserven els estils originals i s’hi afegeixen regles per adaptar el catàleg a pantalles petites.
+
+Aquesta còpia no s’ha publicat automàticament a carlesvives.cat.
