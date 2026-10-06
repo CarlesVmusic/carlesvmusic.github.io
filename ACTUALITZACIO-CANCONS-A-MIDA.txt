@@ -1,4 +1,6 @@
-ACTUALITZACIO: CANCONS A MIDA — FORMSPREE
+ACTUALITZACIO: CANCONS A MIDA — UN TO MES PROPER
+
+Textos revisats per explicar l'origen personal del projecte, l'us d'IA i la diferencia amb la feina d'un cantautor professional. Preu a convenir, amb voluntat de fer una proposta assequible i sense pagament per avancat. No s'ha modificat el funcionament dels formularis.
 
 Puja el contingut d’aquest ZIP al repositori de la web substituint els fitxers. Conserva el CNAME; no cal tocar els DNS.
 
