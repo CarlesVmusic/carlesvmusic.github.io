@@ -8,4 +8,4 @@ Amb JavaScript, quan Formspree confirma l’enviament s’obre gracies-proposta.
 
 Despres de publicar, envia una proposta de prova i comprova que arriba al correu. Pots veure les propostes tambe al panell de Formspree, a Submissions.
 
-El formulari general de Contacte conserva el funcionament anterior.
+El formulari general de Contacte tambe envia directament a Formspree i obre gracies-contacte.html en cas d’enviament correcte.

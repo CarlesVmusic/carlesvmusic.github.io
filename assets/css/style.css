@@ -13,3 +13,5 @@
 /* Six-section navigation: use the accessible menu on tablets too. */
 @media(min-width:761px) and (max-width:1000px){.nav{min-height:86px;flex-wrap:wrap;gap:0}.menu-toggle{display:flex;gap:12px;background:none;color:var(--ink);border:1px solid var(--line);padding:10px 12px;border-radius:3px;font-size:13px;min-height:44px}.links{width:100%;flex-wrap:wrap;gap:5px 24px;padding:18px 0;justify-content:flex-start}.links a{min-height:44px;padding:8px 0}.js .links{display:none}.js .links.is-open{display:flex}}
 @media(min-width:1001px){.links{gap:22px;font-size:13px;white-space:nowrap}.brand{flex-shrink:0}}
+
+.form-feedback{padding:14px 16px;border:1px solid #d9b98477;background:#d9b98412;border-radius:4px;color:var(--ink);font-size:14px;line-height:1.6}
