@@ -1,0 +1,26 @@
+CARLES V — CANÇONS A MIDA · 6 D’OCTUBRE DE 2026
+
+NOVETAT
+Nova pestanya «Cançons a mida», integrada al menú de totes les pàgines.
+Adreça: cancons-personalitzades.html
+Mateix estil visual, amb menú adaptat també per a tauletes.
+
+CONTINGUT
+Encàrrecs exclusivament en català. Història, lletra pròpia o procés compartit.
+Direcció creativa i criteri de qualitat de Carles V., amb eines d’IA.
+Preu, termini i ajustos acordats abans de començar. Pagament al final.
+Entrega MP3, WAV, lletra i instrumental amb qualitat revisada i possibilitats acordades.
+Publicació al perfil només si totes dues parts ho volen i amb acord separat.
+Formulari que prepara un correu; no envia automàticament ni crea pagaments.
+
+COM ACTUALITZAR
+1. Conserva una còpia de la web actual.
+2. Extreu tracks.zip.
+3. Puja el contingut a l’arrel del repositori CarlesVmusic/carlesvmusic.github.io,
+   substituint els fitxers del mateix nom i incloent les carpetes amb el seu contingut.
+4. NO esborris la web abans. NO pugis el ZIP ni una carpeta que l’embolcalli.
+5. Conserva CNAME i la configuració de GitHub Pages. No toquis DNS a SWPanel.
+6. Desa i espera la publicació de GitHub Pages; després actualitza el navegador.
+
+Aquest ZIP actualitza els fitxers, però no publica per si sol.
+No inclou CNAME: has de conservar el que ja existeix al repositori.
