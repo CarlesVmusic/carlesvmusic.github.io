@@ -1,19 +1,19 @@
 (() => {
   const form = document.getElementById('customSongForm');
+  const link = document.querySelector('[data-proposal-link]');
+  if (link) link.addEventListener('click', () => {
+    requestAnimationFrame(() => document.getElementById('custom-name').focus({preventScroll: true}));
+  });
   if (!form) return;
-  form.addEventListener('submit', event => {
-    event.preventDefault();
-    const value = id => document.getElementById(id).value.trim();
-    const body = [
-      `Nom: ${value('custom-name')}`,
-      `Correu: ${value('custom-email')}`,
-      '', 'La meva proposta:', value('custom-story'), '',
-      `Caràcter musical: ${value('custom-style') || 'Per parlar-ne'}`,
-      `Lletra: ${value('custom-lyrics') || 'Per parlar-ne'}`,
-      `Data important: ${value('custom-date') || 'Sense data indicada'}`,
-      '', 'M’agradaria valorar una cançó personalitzada en català i conèixer l’enfocament, el preu i el termini abans de començar.'
-    ].join('\n');
-    window.location.href = `mailto:carlesvmusic@gmail.com?subject=${encodeURIComponent('Proposta de cançó personalitzada')}&body=${encodeURIComponent(body)}`;
-    document.getElementById('custom-status').textContent = 'El correu està preparat: revisa’l i envia’l des de la teva aplicació. Si no s’obre, escriu a carlesvmusic@gmail.com. La proposta encara no s’ha enviat.';
+  form.addEventListener('submit', () => {
+    const button = form.querySelector('button[type="submit"]');
+    button.disabled = true;
+    button.textContent = 'Continuant amb l’enviament…';
+    document.getElementById('custom-status').textContent = 'Completa la comprovació antispam si apareix. El servei confirmarà l’enviament.';
+  });
+  window.addEventListener('pageshow', () => {
+    const button = form.querySelector('button[type="submit"]');
+    button.disabled = false;
+    button.textContent = 'Envia la meva proposta →';
   });
 })();
