@@ -4,7 +4,7 @@ Puja el contingut d’aquest ZIP al repositori de la web substituint els fitxers
 
 El nou formulari envia a https://formspree.io/f/xkjogzab i el destinatari configurat es carlesvmusic@gmail.com. El compte de Formspree ja s’ha verificat i el formulari ja s’ha creat. No cal activar FormSubmit ni crear un altre compte.
 
-Amb JavaScript, l’enviament i la confirmacio es mostren a la mateixa pagina. Si hi ha un error es conserven els camps. Sense JavaScript s’utilitza l’enviament HTML normal de Formspree; si el servei requereix una comprovacio antispam, es completa alla.
+Amb JavaScript, quan Formspree confirma l’enviament s’obre gracies-proposta.html amb el missatge La proposta s’ha enviat correctament. Si hi ha un error es conserven els camps. Sense JavaScript s’utilitza l’enviament HTML normal de Formspree; si el servei requereix una comprovacio antispam, es completa alla.
 
 Despres de publicar, envia una proposta de prova i comprova que arriba al correu. Pots veure les propostes tambe al panell de Formspree, a Submissions.
 

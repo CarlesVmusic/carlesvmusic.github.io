@@ -32,7 +32,8 @@
       }
       form.reset();
       form.querySelector('.form-options').open = false;
-      status.textContent = 'Proposta enviada. Gràcies! Et respondré al correu que has indicat.';
+      status.textContent = 'Proposta enviada. Obrint la confirmació…';
+      window.location.assign(new URL('gracies-proposta.html', window.location.href).href);
     } catch (_) {
       status.textContent = 'No he pogut confirmar l’enviament. He conservat la proposta perquè puguis tornar-ho a provar. També pots escriure a carlesvmusic@gmail.com.';
     } finally {
