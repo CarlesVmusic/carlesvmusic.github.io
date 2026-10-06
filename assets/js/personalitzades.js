@@ -5,15 +5,41 @@
     requestAnimationFrame(() => document.getElementById('custom-name').focus({preventScroll: true}));
   });
   if (!form) return;
-  form.addEventListener('submit', () => {
-    const button = form.querySelector('button[type="submit"]');
+  const button = form.querySelector('button[type="submit"]');
+  const status = document.getElementById('custom-status');
+  let pending = false;
+  form.addEventListener('submit', async event => {
+    event.preventDefault();
+    if (pending || !form.reportValidity()) return;
+    pending = true;
     button.disabled = true;
-    button.textContent = 'Continuant amb l’enviament…';
-    document.getElementById('custom-status').textContent = 'Completa la comprovació antispam si apareix. El servei confirmarà l’enviament.';
-  });
-  window.addEventListener('pageshow', () => {
-    const button = form.querySelector('button[type="submit"]');
-    button.disabled = false;
-    button.textContent = 'Envia la meva proposta →';
+    button.textContent = 'Enviant…';
+    form.setAttribute('aria-busy', 'true');
+    status.textContent = 'Enviant la proposta…';
+    try {
+      const response = await fetch(form.action, {
+        method: 'POST', body: new FormData(form), headers: {'Accept': 'application/json'}
+      });
+      const data = await response.json().catch(() => null);
+      if (!response.ok || !data || data.ok === false || data.errors?.length) {
+        const errors = data?.errors || [];
+        if (errors.some(error => /captcha/i.test(error.code || '') || /captcha/i.test(error.message || ''))) {
+          status.textContent = 'Cal completar una comprovació antispam. Continuaràs a Formspree per confirmar l’enviament.';
+          form.submit();
+          return;
+        }
+        throw new Error('submission-failed');
+      }
+      form.reset();
+      form.querySelector('.form-options').open = false;
+      status.textContent = 'Proposta enviada. Gràcies! Et respondré al correu que has indicat.';
+    } catch (_) {
+      status.textContent = 'No he pogut confirmar l’enviament. He conservat la proposta perquè puguis tornar-ho a provar. També pots escriure a carlesvmusic@gmail.com.';
+    } finally {
+      pending = false;
+      button.disabled = false;
+      button.textContent = 'Envia la meva proposta →';
+      form.removeAttribute('aria-busy');
+    }
   });
 })();

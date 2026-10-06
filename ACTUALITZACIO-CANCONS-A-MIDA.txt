@@ -1,10 +1,11 @@
-ACTUALITZACIO: CANCONS A MIDA
+ACTUALITZACIO: CANCONS A MIDA — FORMSPREE
 
-Puja el contingut d’aquest ZIP al repositori de la web substituint els fitxers. Conserva el CNAME que ja tens; no cal tocar els DNS.
+Puja el contingut d’aquest ZIP al repositori de la web substituint els fitxers. Conserva el CNAME; no cal tocar els DNS.
 
-La pagina es mes compacta, el formulari apareix al costat de la presentacio i el boto Explica’m la teva idea es queda a la mateixa pagina.
+El nou formulari envia a https://formspree.io/f/xkjogzab i el destinatari configurat es carlesvmusic@gmail.com. El compte de Formspree ja s’ha verificat i el formulari ja s’ha creat. No cal activar FormSubmit ni crear un altre compte.
 
-FORMULARI DIRECTE: ACTIVACIO UN SOL COP
-El formulari envia amb FormSubmit al correu carlesvmusic@gmail.com, sense Outlook. Despres de publicar, envia una proposta de prova des de la web. El primer enviament genera un correu d’activacio de FormSubmit: confirma’l des del teu compte (revisa spam). Despres torna a enviar la prova per comprovar que reps les dades. Fins a confirmar el correu, no donis el servei per actiu.
+Amb JavaScript, l’enviament i la confirmacio es mostren a la mateixa pagina. Si hi ha un error es conserven els camps. Sense JavaScript s’utilitza l’enviament HTML normal de Formspree; si el servei requereix una comprovacio antispam, es completa alla.
 
-El formulari manté la comprovacio antispam del servei i, quan s’envia, torna a gracies-proposta.html. El formulari general de Contacte conserva el funcionament anterior.
+Despres de publicar, envia una proposta de prova i comprova que arriba al correu. Pots veure les propostes tambe al panell de Formspree, a Submissions.
+
+El formulari general de Contacte conserva el funcionament anterior.
