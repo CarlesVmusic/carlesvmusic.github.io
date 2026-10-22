@@ -1,0 +1,61 @@
+{
+  "title": "Tot a punt per créixer",
+  "releaseDate": "2026-10-30",
+  "tracks": [
+    {
+      "number": 1,
+      "title": "Que parli el món",
+      "isrc": "QTA7Y2679210"
+    },
+    {
+      "number": 2,
+      "title": "Fora de cobertura",
+      "isrc": "QTA2Q2699981"
+    },
+    {
+      "number": 3,
+      "title": "Encara hi ets",
+      "isrc": "QTA2Q2687045"
+    },
+    {
+      "number": 4,
+      "title": "Torna a mirar",
+      "isrc": "QT6HJ2593148"
+    },
+    {
+      "number": 5,
+      "title": "M’he triat a mi",
+      "isrc": "QZTB62622193"
+    },
+    {
+      "number": 6,
+      "title": "Encén la nit",
+      "isrc": "QT6ET2537401"
+    },
+    {
+      "number": 7,
+      "title": "6.54",
+      "isrc": "QTA7Y2679212"
+    },
+    {
+      "number": 8,
+      "title": "Crits (Nova versió)",
+      "isrc": "QTA7X2663939"
+    },
+    {
+      "number": 9,
+      "title": "El teu lloc (Nova versió)",
+      "isrc": "QTA7X2680871"
+    },
+    {
+      "number": 10,
+      "title": "Tu ets mare (Nova versió)",
+      "isrc": "QTA7X2675998"
+    },
+    {
+      "number": 11,
+      "title": "Demà ja serà demà",
+      "isrc": "QTA7Y2679213"
+    }
+  ]
+}
