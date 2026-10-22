@@ -1,7 +1,7 @@
-/* Carles V · temporary holiday screen · expires 2026-10-22T20:42:00Z */
+/* Carles V · temporary holiday screen · expires 2026-10-22T20:44:00Z */
 (() => {
 'use strict';
-const start=Date.parse('2026-10-22T20:32:00Z'), end=Date.parse('2026-10-22T20:42:00Z');
+const start=Date.parse('2026-10-22T20:34:00Z'), end=Date.parse('2026-10-22T20:44:00Z');
 if(Date.now()>=end)return;
 const oldTitle=document.title;
 let style,screen,timer,cloak;
