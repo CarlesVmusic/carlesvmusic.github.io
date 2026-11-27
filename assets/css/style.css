@@ -99,3 +99,58 @@
 .creator-article .button-row .btn{white-space:normal}
 }
 @media(max-width:360px){.creator-article{font-size:16px}.creator-intro h1{font-size:39px}.creator-article h2{font-size:27px}.creator-jumps{gap:0 12px}}
+
+/* Novembre 2026 — revisió editorial i navegació de la declaració */
+.creator-page{max-width:1070px}
+.creator-page .creator-intro{grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:clamp(28px,5vw,64px);max-width:none;align-items:center;margin:48px 0 34px;padding-bottom:34px}
+.creator-intro h1{font-size:clamp(42px,6vw,74px);text-wrap:balance}
+.creator-intro .creator-byline{font-size:14px}
+.creator-cover{width:100%;max-width:390px;justify-self:end}
+.creator-cover img{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:contain}
+.creator-cover figcaption{font-size:14px}
+.creator-jumps{display:block;max-width:760px;margin:0 auto 44px;padding:24px 0;border-block:1px solid var(--line)}
+.creator-jumps .eyebrow{margin:0 0 12px}
+.creator-jumps ol{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 24px}
+.creator-jumps a{display:flex;gap:12px;align-items:center;min-height:47px;text-decoration:none;font-size:14px;border-bottom:1px solid var(--line);color:var(--ink)}
+.creator-jumps a span{color:var(--accent);font-size:12px;font-variant-numeric:tabular-nums}
+.creator-jumps .jump-arrow{margin-left:auto}
+.creator-jumps a:hover{color:var(--accent)}
+.creator-article{max-width:760px;width:100%;font-size:18px;line-height:1.8}
+.creator-article>p:not(.creator-signature):not(.creator-interview),.creator-principles p{text-align:justify;hyphens:auto;-webkit-hyphens:auto;overflow-wrap:break-word}
+.creator-article h2{margin:1.65em 0 .72em;padding-top:20px;border-top:1px solid var(--line);scroll-margin-top:12px;text-wrap:balance}
+.creator-article h2:first-child{border:0;padding:0;margin-top:0}
+.creator-article h3{font-size:23px;line-height:1.3;margin:1.4em 0 .65em;color:var(--ink);letter-spacing:-.015em}
+.creator-article .btn.primary{color:#10151c}
+.creator-principles{list-style:decimal-leading-zero;padding-left:1.9em;margin:20px 0 30px}
+.creator-principles li{padding:0 0 12px .35em}
+.creator-principles li::marker{color:var(--accent);font-weight:600;font-size:14px}
+.creator-principles h3{font-size:22px;margin:12px 0}
+.creator-principles p{margin:0}
+.latest-release-section{margin:0 0 38px}
+.latest-single{display:grid;grid-template-columns:minmax(0,220px) minmax(0,1fr);align-items:center;gap:clamp(24px,4vw,46px);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:28px 0;margin:0 0 30px}
+.latest-single-art{display:block;min-width:0}
+.latest-single-art img{width:100%;height:auto;aspect-ratio:1;object-fit:contain;border:1px solid var(--line);border-radius:3px;background:var(--panel)}
+.latest-single h2,.latest-single h3{font-family:var(--serif);font-size:clamp(30px,4vw,47px);margin:0 0 14px;line-height:1.12}
+.latest-single-copy>p:not(.eyebrow){max-width:570px;margin-bottom:18px}
+.latest-single-links{gap:8px 18px}
+.latest-single-copy{min-width:0}
+@media(max-width:760px){
+.links{flex-wrap:wrap;justify-content:flex-start}
+.creator-page .creator-intro{grid-template-columns:minmax(0,1fr);gap:24px;margin:32px 0 24px;padding-bottom:24px}
+.creator-intro h1{font-size:clamp(38px,10vw,56px)}
+.creator-cover{display:block;width:min(100%,290px);justify-self:center;margin:auto}
+.creator-cover figcaption{margin-top:10px}
+.creator-jumps{padding:18px 0;margin-bottom:30px}
+.creator-jumps ol{grid-template-columns:minmax(0,1fr)}
+.creator-jumps a{font-size:14px;min-height:44px}
+.creator-article{font-size:17px;line-height:1.72;max-width:100%}
+.creator-article h2{font-size:29px;margin-top:1.4em}
+.creator-article h3{font-size:22px}
+.creator-article .creator-close{font-size:18px}
+.latest-single{grid-template-columns:minmax(0,1fr);gap:20px;padding:22px 0 26px}
+.latest-single-art{max-width:250px;width:100%;margin:0 auto}
+.latest-single h2,.latest-single h3{font-size:34px}
+.latest-single-links{gap:5px 16px}
+.latest-release-section{margin:0 0 32px}
+}
+@media(max-width:360px){.creator-article{font-size:16px}.creator-article h2{font-size:27px}.creator-article h3{font-size:20px}.latest-single h2,.latest-single h3{font-size:30px}}
